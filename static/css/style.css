@@ -6,3 +6,7 @@
 .reg-title  {
     color: #db4c7c;
 }
+
+.recipe-name {
+    text-emphasis: emphasis;
+}
