@@ -14,9 +14,10 @@
 
 <!-- start of featured muffins section -->
 <div class="row">
+    {% for recipe in recipes %}
         <div class="col s12 m4">
             <div class="card">
-                {% for recipe in recipes %}
+            
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="{{recipe.recipe_image}}">
                 </div>
@@ -34,10 +35,10 @@
                         <h5 class="instructions">Instructions:</h5>
                             <p>{{ recipe.recipe_instructions }}</p>
                 </div>
-                {% endfor %}
+    
             </div>
         </div>
-
+    {% endfor %}
 </div>
 
 {% endblock %}
