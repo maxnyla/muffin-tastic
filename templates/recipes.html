@@ -18,7 +18,7 @@
             <div class="card">
                 {% for recipe in recipes %}
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../static/images/choc-muffin.png">
+                    <img class="activator" src="{{recipe.recipe_image}}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator pink-text text-lighten-2 recipe-name">{{ recipe.recipe_description }}<i class="fas fa-angle-double-right right"> Recipe</i></span>
