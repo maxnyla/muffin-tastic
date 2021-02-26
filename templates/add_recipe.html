@@ -7,19 +7,18 @@
 <br>
 <br>
 
-
-    <div class="row">
+    <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="">
             <div class="row">
                 <div class="input-field col s6">
                     <i class="fas fa-user prefix pink-text text-lighten-3"></i>
-                    <input id="f_name" name="f_name" type="text" class="validate">
+                    <input id="f_name" name="f_name" type="text" class="validate" required>
                     <label for="f_name">First name</label>
                 </div>
                
                 <div class="input-field col s6">
                     <i class="fas fa-user prefix pink-text text-lighten-3"></i>
-                    <input id="l_name" name="l_name" type="text" class="validate">
+                    <input id="l_name" name="l_name" type="text" class="validate" required>
                     <label for="l_name">Last name</label>
                 </div>
             </div>
@@ -27,65 +26,69 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-cookie prefix pink-text text-lighten-3"></i>
-                    <input id="recipe_name" name= "recipe_name" type="text" class="validate">
-                    <label for="recipe_name">Recipe name</label>
+                    <input id="rec_name" name= "rec_name" type="text" class="validate" required>
+                    <label for="rec_name">Recipe name</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
-                    <input id="recipe_ingredients" name= "recipe_ingredients" type="text" class="validate">
-                    <label for="recipe_ingredients">Recipe ingredients</label>
+                    <textarea id="rec_ingredients" name="rec_ingredients" minlength="10" maxlength="850" 
+                            type="text" class="materialize-textarea validate" required></textarea>
+                    <label for="rec_ingredients">Recipe ingredients</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix pink-text text-lighten-3"></i>
+                    <textarea id="rec_instructions" name="rec_instructions" minlength="10" maxlength="850" 
+                            type="text" class="materialize-textarea validate" required></textarea>
+                    <label for="rec_instructions">Recipe instructions</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
-                    <input id="recipe_instructions" name="recipe_instructions" type="text" class="validate">
-                    <label for="recipe_instructions">Recipe instructions</label>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-egg prefix pink-text text-lighten-3"></i>
-                        <select id="recipe_category" name="recipe_category" type="text" class="validate">
+                        <select id="rec_category" name="rec_category" type="text" class="validate" required>
                                 <option value="" disabled selected class="text-muted"></option>
                                 <option value="1">Sweet</option>
                                 <option value="2">Savoury</option>
                         </select>
-                    <label for="recipe_category">Sweet or Savoury</label>
+                    <label for="rec_category">Sweet or Savoury</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
-                        <select id="recipe_difficulty" name="recipe_difficulty" type="text" class="validate">
+                        <select id="rec_difficulty" name="rec_difficulty" type="text" class="validate" required>
                                 <option value="" disabled selected class="text-muted"></option>
                                 <option value="1">Easy</option>
                                 <option value="2">Medium</option>
                                 <option value="3">Difficult</option>
                         </select>
-                    <label for="recipe_difficulty">Difficulty level</label>
+                    <label for="rec_difficulty">Difficulty level</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-camera prefix pink-text text-lighten-3"></i>
-                    <input id="recipe_image" name= "recipe_image" type="text" class="validate">
-                    <label for="recipe_image">Recipe image link</label>
+                    <input value="https://www..." id="rec_image" name= "rec_image" type="text" class="validate" required>
+                    <label class="active" for="rec_image">Recipe image link</label>
                 </div>
             </div>
-
-
-
 
         </form>
     </div>
         
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 {% endblock %}
