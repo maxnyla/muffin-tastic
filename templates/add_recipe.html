@@ -26,8 +26,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-cookie prefix pink-text text-lighten-3"></i>
-                    <input id="rec_name" name= "rec_name" type="text" class="validate" required>
-                    <label for="rec_name">Recipe name</label>
+                    <input id="r_recipe_name" name= "r_recipe_name" type="text" class="validate" required>
+                    <label for="r_recipe_name">Recipe name</label>
                 </div>
             </div>
 
@@ -43,42 +43,53 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix pink-text text-lighten-3"></i>
-                    <textarea id="rec_instructions" name="rec_instructions" minlength="10" maxlength="850" 
+                    <textarea id="r_instructions" name="r_instructions" minlength="10" maxlength="850" 
                             type="text" class="materialize-textarea validate" required></textarea>
-                    <label for="rec_instructions">Recipe instructions</label>
+                    <label for="r_instructions">Recipe instructions</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
-                        <select id="rec_category" name="rec_category" type="text" class="validate" required>
+                        <select id="category_name" name="category_name" class="validate" required>
+                            <option value="" disabled selected>Choose category</option>
+                            {% for category in categories %}
+                            <option value="{{category.category_name}}">{{category.category_name}}</option>
+                            {% endfor %}
+                        </select>
+                    <label for="category_name">Sweet or Savoury</label>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
+                        <select id="r_category_name" name="r_category_name" type="text" class="validate" required>
                                 <option value="" disabled selected class="text-muted"></option>
                                 <option value="1">Sweet</option>
                                 <option value="2">Savoury</option>
                         </select>
-                    <label for="rec_category">Sweet or Savoury</label>
+                    <label for="r_category_name">Sweet or Savoury</label>
                 </div>
-            </div>
-
+            </div> -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
-                        <select id="rec_difficulty" name="rec_difficulty" type="text" class="validate" required>
-                                <option value="" disabled selected class="text-muted"></option>
-                                <option value="1">Easy</option>
-                                <option value="2">Medium</option>
-                                <option value="3">Difficult</option>
+                        <select id="difficulty_level" name="difficulty_level" class="validate" required>
+                                <option value="" disabled selected></option>
+                                {% for level in levels %}
+                                <option value="{{level.difficulty_level}}">{{level.difficulty_level}}</option>
+                                {% endfor %}
                         </select>
-                    <label for="rec_difficulty">Difficulty level</label>
+                    <label for="difficulty_level">Difficulty level</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-camera prefix pink-text text-lighten-3"></i>
-                    <input value="https://www..." id="rec_image" name= "rec_image" type="text" class="validate" required>
-                    <label class="active" for="rec_image">Recipe image link</label>
+                    <input value="https://www..." id="r_image" name= "r_image" type="text" class="validate" required>
+                    <label class="active" for="r_image">Recipe image link</label>
                 </div>
             </div>
 
