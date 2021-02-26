@@ -5,28 +5,80 @@
 
     <div class="row">
         <form class="col s12" method="POST" action="">
-        <div class="row">
-
-            <div class="input-field col s12">
-            <i class="fas fa-user prefix pink-text text-lighten-3"></i>
-            <input id="icon_f_name" type="text" class="validate">
-            <label for="icon_f_name">Name</label>
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="fas fa-user prefix pink-text text-lighten-3"></i>
+                    <input id="f_name" name="f_name" type="text" class="validate">
+                    <label for="f_name">First name</label>
+                </div>
+               
+                <div class="input-field col s6">
+                    <i class="fas fa-user prefix pink-text text-lighten-3"></i>
+                    <input id="l_name" name="l_name" type="text" class="validate">
+                    <label for="l_name">Last name</label>
+                </div>
             </div>
 
-            <div class="input-field col s12">
-            <i class="fas fa-user-circle prefix pink-text text-lighten-3"></i>
-            <input id="icon_alias" type="tel" class="validate">
-            <label for="icon_alias">Alias</label>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-cookie prefix pink-text text-lighten-3"></i>
+                    <input id="recipe_name" name= "recipe_name" type="text" class="validate">
+                    <label for="recipe_name">Recipe name</label>
+                </div>
             </div>
 
-            <div class="input-field col s12">
-            <i class="fas fa-envelope prefix pink-text text-lighten-3"></i>
-            <input id="icon_email" type="tel" class="validate">
-            <label for="icon_email">Email</label>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
+                    <input id="recipe_ingredients" name= "recipe_ingredients" type="text" class="validate">
+                    <label for="recipe_ingredients">Recipe ingredients</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
+                    <input id="recipe_instructions" name="recipe_instructions" type="text" class="validate">
+                    <label for="recipe_instructions">Recipe instructions</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-egg prefix pink-text text-lighten-3"></i>
+                        <select id="recipe_category" name="recipe_category" type="text" class="validate">
+                                <option value="" disabled selected class="text-muted"></option>
+                                <option value="1">Sweet</option>
+                                <option value="2">Savoury</option>
+                        </select>
+                    <label for="recipe_category">Sweet or Savoury</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
+                        <select id="recipe_difficulty" name="recipe_difficulty" type="text" class="validate">
+                                <option value="" disabled selected class="text-muted"></option>
+                                <option value="1">Easy</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Difficult</option>
+                        </select>
+                    <label for="recipe_difficulty">Difficulty level</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-camera prefix pink-text text-lighten-3"></i>
+                    <input id="recipe_image" name= "recipe_image" type="text" class="validate">
+                    <label for="recipe_image">Recipe image link</label>
+                </div>
             </div>
 
 
-        </div>
+
+
         </form>
     </div>
         
