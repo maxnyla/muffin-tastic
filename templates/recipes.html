@@ -20,7 +20,7 @@
     {% for recipe in recipes %}
         <div class="col s12 m4">
             <div class="card">
-            
+
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="responsive-img activator" src="{{recipe.recipe_image}}" alt= "{{ recipe.recipe_name }}">
                 </div>
@@ -30,6 +30,7 @@
                         <p>{{ recipe.recipe_difficulty }}</p>
                         <p><em>Created by: {{ recipe.created_by }}</em></p>
                 </div>
+
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4 recipe-header">{{ recipe.recipe_name }}<i class="fas fa-times right"></i>
                     </span>
@@ -38,8 +39,22 @@
 
                         <h5 class="instructions">Instructions:</h5>
                             <p>{{ recipe.recipe_instructions }}</p>
+
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col delete-recipe">
+                                        <a href="" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>
+                                    </div>
+                                    <div class="col edit-recipe">
+                                        <a href="" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                 </div>
-    
             </div>
         </div>
     {% endfor %}

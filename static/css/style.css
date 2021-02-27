@@ -3,6 +3,10 @@
     /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);*/
 }
 
+.flashes h4 {
+    line-height: 2;
+}
+
 .reg-title  {
     color: #db4c7c;
 }
@@ -13,4 +17,14 @@
 
 .recipe-header {
      text-emphasis: emphasis;
+}
+
+.btn-edit,
+.btn-delete {
+	margin: 4px
+}
+
+.card-content {
+    margin: 5px;
+    line-height: 30px;
 }

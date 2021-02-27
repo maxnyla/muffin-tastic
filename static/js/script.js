@@ -32,7 +32,6 @@ $(document).ready(function () {
                 });
             }
         });
-    }
 });
 
 
