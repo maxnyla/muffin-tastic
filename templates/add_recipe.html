@@ -34,17 +34,17 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
-                    <textarea id="rec_ingredients" name="rec_ingredients" minlength="10" maxlength="850" 
-                            type="text" class="materialize-textarea validate" required></textarea>
-                    <label for="rec_ingredients">Recipe ingredients</label>
+                    <textarea id="r_ingredients" name="r_ingredients textarea" minlength="10" maxlength="600"
+                            type="text" class="materialize-textarea validate" data-length="600" required></textarea>
+                    <label for="r_ingredients">Recipe ingredients</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix pink-text text-lighten-3"></i>
-                    <textarea id="r_instructions" name="r_instructions" minlength="10" maxlength="850" 
-                            type="text" class="materialize-textarea validate" required></textarea>
+                    <textarea id="r_instructions" name="r_instructions" minlength="10" maxlength="850"
+                            type="text" class="materialize-textarea validate" data-length="850" required></textarea>
                     <label for="r_instructions">Recipe instructions</label>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                             <option value="{{category.category_name}}">{{category.category_name}}</option>
                             {% endfor %}
                         </select>
-                    <label for="category_name">Sweet or Savoury</label>
+                    <label for="category_name">Category</label>
                 </div>
             </div>
             <!-- <div class="row">
