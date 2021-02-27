@@ -8,47 +8,35 @@
 <br>
 
     <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="">
-            <div class="row">
-                <div class="input-field col s6">
-                    <i class="fas fa-user prefix pink-text text-lighten-3"></i>
-                    <input id="f_name" name="f_name" type="text" class="validate" required>
-                    <label for="f_name">First name</label>
-                </div>
-               
-                <div class="input-field col s6">
-                    <i class="fas fa-user prefix pink-text text-lighten-3"></i>
-                    <input id="l_name" name="l_name" type="text" class="validate" required>
-                    <label for="l_name">Last name</label>
-                </div>
-            </div>
-
+        <!-- ADD RECIPE FORM START -->
+        <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+            <!-- ADD RECIPE NAME -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-cookie prefix pink-text text-lighten-3"></i>
-                    <input id="r_recipe_name" name= "r_recipe_name" type="text" class="validate" required>
-                    <label for="r_recipe_name">Recipe name</label>
+                    <input id="recipe_name" name= "recipe_name" type="text" class="validate" required>
+                    <label for="recipe_name">Recipe name</label>
                 </div>
             </div>
-
+            <!-- ADD RECIPE INGREDIENTS -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
-                    <textarea id="r_ingredients" name="r_ingredients textarea" minlength="10" maxlength="600"
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="600"
                             type="text" class="materialize-textarea validate" data-length="600" required></textarea>
-                    <label for="r_ingredients">Recipe ingredients</label>
+                    <label for="recipe_ingredients">Recipe ingredients</label>
                 </div>
             </div>
-
+            <!-- ADD RECIPE INSTRUCTIONS -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix pink-text text-lighten-3"></i>
-                    <textarea id="r_instructions" name="r_instructions" minlength="10" maxlength="850"
-                            type="text" class="materialize-textarea validate" data-length="850" required></textarea>
-                    <label for="r_instructions">Recipe instructions</label>
+                    <textarea id="recipe_instructions" name="recipe_instructions" minlength="10" maxlength="2000"
+                            type="text" class="materialize-textarea validate" data-length="2000" required></textarea>
+                    <label for="recipe_instructions">Recipe instructions</label>
                 </div>
             </div>
-
+            <!-- ADD CATEGORY -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
@@ -72,36 +60,37 @@
                     <label for="r_category_name">Sweet or Savoury</label>
                 </div>
             </div> -->
+
+            <!-- ADD DIFFICULTY LEVEL -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
-                        <select id="difficulty_level" name="difficulty_level" class="validate" required>
+                        <select id="recipe_difficulty" name="recipe_difficulty" class="validate" required>
                                 <option value="" disabled selected></option>
                                 {% for level in levels %}
-                                <option value="{{level.difficulty_level}}">{{level.difficulty_level}}</option>
+                                <option value="{{level.recipe_difficulty}}">{{level.recipe_difficulty}}</option>
                                 {% endfor %}
                         </select>
-                    <label for="difficulty_level">Difficulty level</label>
+                    <label for="recipe_difficulty">Difficulty level</label>
                 </div>
             </div>
-
+            <!-- ADD RECIPE IMAGE -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-camera prefix pink-text text-lighten-3"></i>
-                    <input value="https://www..." id="r_image" name= "r_image" type="text" class="validate" required>
-                    <label class="active" for="r_image">Recipe image link</label>
+                    <input value="https://www..." id="recipe_image" name= "recipe_image" type="text" class="validate" required>
+                    <label class="active" for="recipe_image">Recipe image link</label>
                 </div>
             </div>
-
+            <!-- ADD RECIPE BUTTON -->
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large pink lighten-3 text-shadow"><strong>ADD MUFFIN RECIPE</strong></button>
-
+                <button type="submit" class="btn-large pink lighten-3 text-shadow">
+                    <strong>ADD MUFFIN RECIPE</strong></button>
             </div>
-
             <br>
             <br>
-
         </form>
+        <!-- ADD RECIPE FORM END -->
     </div>
         
     <br>
