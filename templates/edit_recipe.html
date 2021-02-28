@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-cookie prefix pink-text text-lighten-3"></i>
-                    <input id="recipe_name" name= "recipe_name" type="text" class="validate" required>
+                    <input id="recipe_name" name= "recipe_name" value="{{ recipe.recipe_name }}" type="text" class="validate" required>
                     <label for="recipe_name">Recipe name</label>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="600"
-                            type="text" class="materialize-textarea validate" data-length="600" required></textarea>
+                            type="text" class="materialize-textarea validate" data-length="600" required> {{- recipe.recipe_ingredients -}} </textarea>
                     <label for="recipe_ingredients">Recipe ingredients</label>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix pink-text text-lighten-3"></i>
                     <textarea id="recipe_instructions" name="recipe_instructions" minlength="10" maxlength="2000"
-                            type="text" class="materialize-textarea validate" data-length="2000" required></textarea>
+                            type="text" class="materialize-textarea validate" data-length="2000" required> {{- recipe.recipe_instructions -}} </textarea>
                     <label for="recipe_instructions">Recipe instructions</label>
                 </div>
             </div>
@@ -43,7 +43,11 @@
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected></option>
                             {% for category in categories %}
-                            <option value="{{category.category_name}}">{{category.category_name}}</option>
+                                {% if category.category_name == recipe.category_name %}
+                                    <option value="{{ category.category_name }}" selected >{{ category.category_name }}</option>
+                                {% else %}
+                                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                {% endif %}
                             {% endfor %}
                         </select>
                     <label for="category_name">Category</label>
@@ -57,7 +61,11 @@
                         <select id="recipe_difficulty" name="recipe_difficulty" class="validate" required>
                                 <option value="" disabled selected></option>
                                 {% for level in levels %}
-                                <option value="{{level.recipe_difficulty}}">{{level.recipe_difficulty}}</option>
+                                    {% if level.recipe_difficulty == level.recipe_difficulty %}
+                                        <option value="{{ level.recipe_difficulty }}" selected >{{ level.recipe_difficulty }}</option>
+                                    {% else %}
+                                        <option value="{{ level.recipe_difficulty }}">{{ level.recipe_difficulty }}</option>
+                                    {% endif %}
                                 {% endfor %}
                         </select>
                     <label for="recipe_difficulty">Level</label>
@@ -68,15 +76,19 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-camera prefix pink-text text-lighten-3"></i>
-                    <input value="https://" id="recipe_image" name= "recipe_image" minlength="20" type="text" class="validate" required>
+                    <input value="{{ recipe.recipe_image }}" id="recipe_image" name= "recipe_image" minlength="20" type="text" class="validate" required>
                     <label class="active" for="recipe_image">Recipe image link</label>
                 </div>
             </div>
 
-            <!-- EDIT RECIPE BUTTON -->
+            <!-- EDIT RECIPE BUTTON PANEL -->
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large pink lighten-3 text-shadow">
-                    <strong>EDIT RECIPE</strong><i class="fas fa-edit right"></i></button>
+                <!-- CANCEL BUTTON -->
+                    <a href="{{ url_for('get_recipes') }}" class="btn-large teal darken-1 text-shadow"><strong>CANCEL</strong>
+                        <i class="fas fa-times-circle left"></i></a>
+                <!-- SUBMIT EDIT BUTTON -->
+                <button type="submit" class="btn-large pink accent-4 text-shadow">
+                    <strong>SUBMIT EDIT</strong><i class="fas fa-edit left"></i></button>
             </div>
             <br>
             <br>
