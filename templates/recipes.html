@@ -47,7 +47,7 @@
                                         <a href="" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>
                                     </div>
                                     <div class="col edit-recipe">
-                                        <a href="" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
+                                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
                                     </div>
                                 </div>
                             </div>

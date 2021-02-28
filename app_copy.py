@@ -119,23 +119,13 @@ def add_recipe():
         return redirect(url_for("get_recipes"))
 
     # if form was not submitted
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.category.find().sort("category_name", 1)
     # get recipe difficulty level from the db
-    levels = mongo.db.levels.find().sort("recipe_difficulty", 1)
+    levels = mongo.db.level.find().sort("recipe_difficulty", 1)
     return render_template(
         "add_recipe.html", categories=categories, levels=levels)
 
 
-@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
-def edit_recipe(recipe_id):
-    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    categories = mongo.db.categories.find().sort("category_name", 1)
-    levels = mongo.db.levels.find().sort("recipe_difficulty", 1)
-    return render_template(
-        "edit_recipe.html", recipe=recipe, categories=categories,
-        levels=levels)
-
-        
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

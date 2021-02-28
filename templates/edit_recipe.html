@@ -3,14 +3,14 @@
 
 <br>
 <br>
-<h3 class="pink-text text-darken-4 center-align">Edit your muffin recipes</h3>
+<h3 class="pink-text text-darken-4 center-align">Edit your muffin recipe</h3>
 <br>
 <br>
 
     <div class="row card-panel grey lighten-5">
-        <!-- ADD RECIPE FORM START -->
-        <form class="col s12" method="POST" action="">
-            <!-- ADD RECIPE NAME -->
+        <!-- EDIT RECIPE FORM START -->
+        <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+            <!-- EDIT RECIPE NAME -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-cookie prefix pink-text text-lighten-3"></i>
@@ -18,7 +18,7 @@
                     <label for="recipe_name">Recipe name</label>
                 </div>
             </div>
-            <!-- ADD RECIPE INGREDIENTS -->
+            <!-- EDIT RECIPE INGREDIENTS -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
@@ -27,7 +27,7 @@
                     <label for="recipe_ingredients">Recipe ingredients</label>
                 </div>
             </div>
-            <!-- ADD RECIPE INSTRUCTIONS -->
+            <!-- EDIT RECIPE INSTRUCTIONS -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix pink-text text-lighten-3"></i>
@@ -36,7 +36,7 @@
                     <label for="recipe_instructions">Recipe instructions</label>
                 </div>
             </div>
-            <!-- ADD CATEGORY -->
+            <!-- EDIT CATEGORY -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
@@ -50,8 +50,8 @@
                 </div>
             </div>
 
-            <!-- ADD DIFFICULTY LEVEL -->
-            <!-- <div class="row">
+            <!-- EDIT DIFFICULTY LEVEL -->
+            <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
                         <select id="recipe_difficulty" name="recipe_difficulty" class="validate" required>
@@ -62,8 +62,9 @@
                         </select>
                     <label for="recipe_difficulty">Level</label>
                 </div>
-            </div> -->
-            <!-- ADD RECIPE IMAGE -->
+            </div>
+
+            <!-- EDIT RECIPE IMAGE -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-camera prefix pink-text text-lighten-3"></i>
@@ -71,7 +72,8 @@
                     <label class="active" for="recipe_image">Recipe image link</label>
                 </div>
             </div>
-            <!-- ADD RECIPE BUTTON -->
+
+            <!-- EDIT RECIPE BUTTON -->
             <div class="col s12 center-align">
                 <button type="submit" class="btn-large pink lighten-3 text-shadow">
                     <strong>EDIT RECIPE</strong><i class="fas fa-edit right"></i></button>
@@ -79,7 +81,8 @@
             <br>
             <br>
         </form>
-        <!-- ADD RECIPE FORM END -->
+
+        <!-- EDIT RECIPE FORM END -->
     </div>
         
     <br>
