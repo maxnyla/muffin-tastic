@@ -11,7 +11,7 @@
     {% for recipe in recipes %}
         {% if session.user|lower == recipe.created_by|lower %}
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card large">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="responsive-img activator" src="{{recipe.recipe_image}}" alt= "{{ recipe.recipe_name }}">
                     </div>
