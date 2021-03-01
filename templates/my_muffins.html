@@ -3,9 +3,31 @@
 
 <br>
 <br>
-    <h3 class="pink-text text-darken-4 center-align">My muffins</h3>
+    <h3 class="my-muffins-title center-align"><i class="fas fa-grin-stars prefix"></i>  My muffins</h3>
 <br>
-<br>
+
+<div class="my-muffins-header">
+    <div class="row">
+        <div class="col">
+            <h5 class="my-muffins-intro center-align">
+                 <strong>  Welcome to your Muffin-Tastic creations, {{ username }} 
+                 </strong>
+            </h5>
+            
+            <div class="col my-muffins-text">
+                <p><strong>On this page you will find all the muffin recipes that you have uploaded to the site, 
+                    so that you can easily access all your contributions.
+                    You can also edit or delete any of them if you wish. 
+                <!-- </strong></p>
+                <p><strong> --> Of course, feel free to add many more yummy recipes for others to try out! Because, 
+                    as we like to say here...There can never be too many muffins in the world! 
+                </strong></p>
+                <p><strong>* In order to edit or delete a recipe, just click the card as usual
+                </strong></p> 
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="row">
     {% for recipe in recipes %}

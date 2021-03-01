@@ -4,7 +4,7 @@
 }
 
 .flashes h4 {
-    line-height: 2;
+    line-height: 3;
 }
 
 .reg-title  {
@@ -27,4 +27,20 @@
 .card-content {
     margin: 5px;
     line-height: 30px;
+}
+
+.my-muffins-intro {
+    color: #ee7aa2;
+    /* color: #db4c7c; */
+
+}
+
+.my-muffins-title {
+    color: #929718;
+    /* color:  #f8bbd0; */
+}
+
+.my-muffins-text {
+    color: #929718;
+    color: #929718;
 }
