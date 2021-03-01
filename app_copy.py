@@ -119,11 +119,43 @@ def add_recipe():
         return redirect(url_for("get_recipes"))
 
     # if form was not submitted
-    categories = mongo.db.category.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("category_name", 1)
     # get recipe difficulty level from the db
-    levels = mongo.db.level.find().sort("recipe_difficulty", 1)
+    levels = mongo.db.levels.find().sort("recipe_difficulty", 1)
     return render_template(
         "add_recipe.html", categories=categories, levels=levels)
+
+
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    if request.method == "POST":
+        submit = {
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_description": request.form.get("recipe_description"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            # "recipe_ingredients": request.form.getlist("recipe_ingredients"),
+            "recipe_instructions": request.form.get("recipe_instructions"),
+            "category_name": request.form.get("category_name"),
+            "recipe_difficulty": request.form.get("recipe_difficulty"),
+            "recipe_image": request.form.get("recipe_image"),
+            "created_by": session["user"]
+        }
+        mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
+        flash("Your recipe has been edited")
+
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    levels = mongo.db.levels.find().sort("recipe_difficulty", 1)
+    return render_template(
+        "edit_recipe.html", recipe=recipe, categories=categories,
+        levels=levels)
+
+
+@app.route("/delete_recipe/<recipe_id>")
+def delete_recipe(recipe_id):
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("This recipe has been deleted")
+    return redirect(url_for("get_recipes"))
 
 
 if __name__ == "__main__":
