@@ -19,15 +19,15 @@
 				<a href="{{ url_for('get_recipes') }}" class="brand-logo">  Muffin-Tastic</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
+                    <li><a href="{{ url_for('get_recipes') }}"><strong>Home</strong></a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
-                        <li><a href="#">My muffins</a></li>
-                        <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        <li><a href="{{ url_for('account', username=session['user']) }}"><strong>Account</strong></a></li>
+                        <li><a href="{{ url_for('my_muffins') }}">My muffins</a></li>
+                        <li><a href="{{ url_for('add_recipe') }}"><strong>Add Recipe</strong></a></li>
+                        <li><a href="{{ url_for('logout') }}"><strong>Log Out</strong></a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                        <li><a href="{{ url_for('login') }}"><strong>Log In</strong></a></li>
+                        <li><a href="{{ url_for('register') }}"><strong>Register</strong></a></li>
                     {% endif %}
 				</ul>
 			</div>
@@ -39,7 +39,7 @@
             <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
-                <li><a href="#">My muffins</a></li>
+                <li><a href="{{ url_for('my_muffins') }}"><strong>My Muffins</strong></a></li>
                 <li><a href="{{ url_for('add_recipe') }}">Add recipe</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
@@ -75,7 +75,7 @@
                     <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('get_recipes') }}"><strong>Home</strong></a></li>
                     {% if session.user %}
                         <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('account', username=session['user']) }}"><strong>Account</strong></a></li>
-                        <li><a class="grey-text text-lighten-4 footer-text" href="#"><strong>My muffins</strong></a></li>
+                        <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('my_muffins') }}"><strong>My muffins</strong></a></li>
                         <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('add_recipe') }}"><strong>Add recipe</strong></a></li>
                         <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('logout') }}"><strong>Log Out</strong></a></li>
                     {% else %}

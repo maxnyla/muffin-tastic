@@ -158,6 +158,12 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+@app.route("/my_muffins")
+def my_muffins():
+	recipes = mongo.db.recipes.find().sort("created_by")
+	return render_template("my_muffins.html", recipes=recipes)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
