@@ -30,9 +30,8 @@
 }
 
 .my-muffins-intro {
-    color: #ee7aa2;
+     color: #ee7aa2;
     /* color: #db4c7c; */
-
 }
 
 .my-muffins-title {
@@ -40,7 +39,22 @@
     /* color:  #f8bbd0; */
 }
 
-.my-muffins-text {
-    color: #929718;
+.fav-muffins {
+    color: #ee7aa2;
+    /* color: #929718; */
+}
+
+.search-muffins-intro {
+       color: #929718;
+}
+
+.my-muffins-text,
+.search-muffins-text {    
     color: #929718;
 }
+
+search-icon,
+search-btn {
+    color: #ee7aa2;
+}
+
