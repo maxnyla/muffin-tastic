@@ -6,11 +6,11 @@
     <br>
 
 <!-- Start of all muffin db search-->
-<!--./ end of muffin search-->
 
 <div class="search-muffins-header">
     <div class="row center-align">
         <div class="col s10 m8">
+            <br>
             <h5 class="search-muffins-intro center-align">
                  <strong>    Find your favourite recipes here:
                  </strong>
@@ -20,38 +20,42 @@
         <div class="row card-panel grey lighten-5">
             <form action="{{ url_for('search') }}" method="post" class="col s12">
                 <div class="row valign-wrapper center-align">
-                    <div class="input-field col s10 m8 search-icon">
-                        <i class="fas fa-search prefix search-icon"></i>
+                    
+                    <div class="input-field col s12 m8 search-icon">
+
+                        <i class="fas fa-search search-icon prefix"></i>
                         <input type="text" name="query" id="query" minlength="3" class="validate" required>
                         <label for="query">Search Muffins</label>
+
                     </div>
 
                     <div class="col s12 m4">
-                        <button type="submit" class="btn search-btn text-shadow"> Search </button>
-                        <a href="{{ url_for('get_recipes') }}" class="btn text-shadow"> Reset </a>
+
+                        <button type="submit" class="search-btn btn text-shadow"> Search </button>
+                        
+                        <a href="{{ url_for('get_recipes') }}" class="reset-btn btn text-shadow"> Reset </a>
+
                     </div>
+
                 </div>
             </form>
         </div>
-
-    <br>
-        
-        <div class="col search-muffins-text">
-                    <h5>Below you can find a selection of our all time favourites to spark your interest!</h5>
-                    <!-- <p><strong>Below you can find a selection of our all time favourites to spark your interest!
-                    </strong></p>
-                    <p><strong>
-                    </strong></p>  -->
-        </div>
-        
-    <br>
-    <br>
-    <br>
-       
     </div>
 </div>
+<!--./ end of muffin search-->
+
+<br>
 
 <!-- start of featured muffins section -->
+
+    <div class="col search-muffins-text center-align">
+        <h5>Or...you can find a selection of our all-time favourites below to spark your interest!</h5>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
 <div class="row">
     {% for recipe in recipes %}
         <div class="col s12 m4">

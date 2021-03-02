@@ -48,13 +48,25 @@
        color: #929718;
 }
 
-.my-muffins-text,
+.my-muffins-text {
+    color: #929718;
+    font-size: 1.5em;
+}
+
 .search-muffins-text {    
     color: #929718;
 }
 
-search-icon,
-search-btn {
-    color: #ee7aa2;
+.search-icon {
+    color: #ee7aa2; 
+}
+
+.search-btn {
+    background-color: #ee7aa2; 
+}
+
+.reset-btn {
+    background-color: #929718;
+    /* background-color: #929718e0;  */
 }
 
