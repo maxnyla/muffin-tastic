@@ -45,7 +45,8 @@
 }
 
 .search-muffins-intro {
-       color: #929718;
+    color: #8f9595;
+    /* color: #929718; */
 }
 
 .my-muffins-text {
@@ -53,7 +54,8 @@
     font-size: 1.5em;
 }
 
-.search-muffins-text {    
+.search-muffins-text { 
+    /* color: #8f9595;    */
     color: #929718;
 }
 
