@@ -78,6 +78,18 @@
     /* color: #929718; */
 }
 
-.add-recipe-btn:a {
+/* .add-recipe-btn:a {
     color: white;
+} */
+
+.about-header {
+    color: #ee7aa2;
+}
+
+.about-title {
+    color: #929718;
+}
+
+.about-text {
+    color: #929718;
 }

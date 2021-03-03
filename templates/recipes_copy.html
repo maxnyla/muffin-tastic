@@ -1,21 +1,73 @@
 {% extends "base.html" %}
 {% block content %}
-    <br>
-    <br>
-    <h3 class="pink-text text-darken-4 center-align">Our favourite muffins</h3>
-    <br>
-    <br>
+
+<!-- Start of 'About' section -->
+
+
+
+
+<!--./ end of 'About' section -->
+
+
+
+
+
 
 <!-- Start of all muffin db search-->
-    <div class="row">
+    <br>
+    <br>
+    <h3 class="center-align fav-muffins">Our favourite muffins</h3>
+    <br>
 
-        <!-- PENDING -->
+<div class="search-muffins-header">
+    <div class="row center-align">
+        <div class="col s10 m8">
+            <br>
+            <h5 class="search-muffins-intro center-align">
+                 <strong>    Find your favourite recipes here:
+                 </strong>
+            </h5>
+        </div>
 
+        <div class="row card-panel grey lighten-5">
+            <form action="{{ url_for('search') }}" method="post" class="col s12">
+                <div class="row valign-wrapper center-align">
+                    
+                    <div class="input-field col s12 m8 search-icon">
+
+                        <i class="fas fa-search search-icon prefix"></i>
+                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                        <label for="query">Search by muffin name, keyword or ingredient</label>
+
+                    </div>
+
+                    <div class="col s12 m4">
+
+                        <button type="submit" class="search-btn btn text-shadow"> Search </button>
+                        
+                        <a href="{{ url_for('get_recipes') }}" class="reset-btn btn text-shadow"> Reset </a>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 <!--./ end of muffin search-->
 
+<br>
 
 <!-- start of featured muffins section -->
+
+    <div class="col search-muffins-text center-align">
+        <h5>Or...you can find a selection of our all-time favourites below to spark your interest!</h5>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
 <div class="row">
     {% for recipe in recipes %}
         <div class="col s12 m4">

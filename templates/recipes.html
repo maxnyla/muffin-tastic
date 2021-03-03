@@ -3,21 +3,48 @@
 
 <!-- Start of 'About' section -->
 
+<div class="container about">
+    <br>
+    <br>
 
+    <div class="row">
+        <div class="col">
+            <h3 class="about-header"> MUFFIN-TASTIC, where muffins rule </h3>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+
+        <div class="col s9 about-photos">
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="../static/images/car1.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="../static/images/car2.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="../static/images/car3.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img src="../static/images/car4.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img src="../static/images/car5.jpg"></a>
+                </div>
+        </div>
+
+
+        <div class="col s3">
+                <h5 class="about-title"> Welcome to Muffin-Tastic! </h5>
+                <p class="about-text"> This is a recipe site exclusively dedicated to muffins. You can browse our recipes, search for your favourites,
+                    or even add your own recipes to contribute to this ever growing collection of yummy goodness! </p>
+                <p class="about-text"> So what are you waiting for? Take a look around </p>
+        </div>
+        
+    </div>
+
+</div>
 
 
 <!--./ end of 'About' section -->
 
 
-
-
-
-
 <!-- Start of all muffin db search-->
-    <br>
-    <br>
-    <h3 class="center-align fav-muffins">Our favourite muffins</h3>
-    <br>
 
 <div class="search-muffins-header">
     <div class="row center-align">
@@ -56,6 +83,8 @@
 </div>
 <!--./ end of muffin search-->
 
+<br>
+    <h3 class="center-align fav-muffins">Our favourites</h3>
 <br>
 
 <!-- start of featured muffins section -->
@@ -113,5 +142,24 @@
         </div>
     {% endfor %}
 </div>
+
+
+<br>
+    <h4 class="center-align search-muffins-text">Feeling inspired? Why not add your own? </h4>
+<br>
+
+<!-- ADD RECIPE BUTTON start -->
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
+                    <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
+                </button>
+            </div>
+
+<!-- /ADD RECIPE BUTTON end -->
+
+<br>
+<br>
+<br>
+
 
 {% endblock %}
