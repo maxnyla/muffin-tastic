@@ -4,9 +4,14 @@ $(document).ready(function () {
     $(".sidenav").sidenav();
     $('select').formSelect();
     $('input#input_text, textarea#textarea2').characterCounter();
-    $('.carousel').carousel({fullWidth: true});
     $('');
+    $('#muffin-carousel-auto').carousel();
+     setInterval(function() {
+        $('#muffin-carousel-auto').carousel('next');
+    }, 3500); 
 });
+
+
 
 
     // validateMaterializeSelect();
