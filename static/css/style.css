@@ -49,7 +49,8 @@
     /* color: #929718; */
 }
 
-.my-muffins-text {
+.my-muffins-text,
+.my-account-text {
     color: #929718;
     font-size: 1.5em;
 }
@@ -75,6 +76,17 @@
 .add-muffin-title {
     color: #8f9595;
     /* color: #959689; */
+    /* color: #929718; */
+}
+
+.my-account-title {
+    color: #929718;
+    /* color: #8f9595; */
+}
+
+.my-account-intro {
+    color: #ee7aa2;
+    /* color: #8f9595; */
     /* color: #929718; */
 }
 
