@@ -1,46 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!-- <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-                <h3 class="center-align my-account-intro">
-                    Welcome to your account, {{ username }}
-                </h3>
-            </div>
-        </div>
-    </div> -->
-    
+        <br>
+        <br>
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <h3 class="center-align my-account-title">
                         Welcome to your account. You are logged in as:
             </h3>
-            <h4 class="center-align my-account-intro"> {{ username }} </h4>
+            <h4 class="center-align my-account-intro"><i class="fas fa-user-alt pink-text text-lighten-3"></i> {{ username }} </h4>
         </div>
     </div>
+        <br>
 
-    <div class="col s12 center-align">
-            <h4 class="my-account-text"> You can add your own recipes here: </h4>
-    <br>
-            <!-- ADD RECIPE BUTTON start -->
-                <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
-                    <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
-                </button>
-            <!-- /ADD RECIPE BUTTON end -->
+    <div class="section">
+
+        <div class="row">
+            <div class="col s4 center-align account-left-text">
+                    <h4 class="my-account-text"> <i class="fas fa-mitten pink-text text-lighten-3"></i> You can add your own recipes here </h4>
+                        <br>
+                    <!-- ADD RECIPE BUTTON start -->
+                        <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
+                            <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text add-btn"><strong>ADD</strong></a>
+                        </button>
+                    <!-- /ADD RECIPE BUTTON end -->
+            </div>
+
+            <div class="col s8 ">
+                <a href="" class="account-pic"><img class="responsive-img account-left-pic circle" src="../static/images/pic1.jpg"></a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s8">
+                <a href="" class="account-pic"><img class="responsive-img account-right-pic circle" src="../static/images/pic2.jpg"></a>
+            </div>
+
+        <div class="col s4 center-align account-right-text">
+                    <h4 class="my-account-text">  Or jump straight in to view or edit your creations </h4>
+                <br>
+                <!-- Redirect to My Muffins start -->
+                        <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
+                            <a href="{{ url_for('my_muffins') }}" class="add-recipe-btn white-text add-btn"><strong>My Muffins</strong></a>
+                        </button>
+                <!-- /Redirect to My Muffins end -->
+            </div>
+            
+        </div>
+            <br>
+            <br>
+
     </div>
-    <br>
-    <br>
-
-
-
-
-
-
-
-     
-    
-
-
 
 {% endblock %}
