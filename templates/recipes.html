@@ -164,7 +164,11 @@
 <!-- ADD RECIPE BUTTON start -->
             <div class="col s12 center-align">
                 <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
+                    {% if session.user %}   
                     <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
+                    {% else %}
+                    <a href="{{ url_for('login') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
+                    {% endif %}
                 </button>
             </div>
 
