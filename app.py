@@ -1,4 +1,5 @@
 import os
+import re
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -8,6 +9,32 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
+
+# Validation functions
+
+
+def validate_name(username):
+    # Validate username.
+    # Allow letters, hyphens and underscores. No spaces.
+    return re.match("^[a-zA-Z0-9-_]{5,15}$", username)
+
+def validate_password(password):
+    # Validate password.
+    # Allow any character, length 5-15 chars.
+    return re.match("^.{5,15}$", password)
+
+
+def validate_recipe_name(recipe_name):
+    # Validate recipe name.
+    # Allow printable characters and spaces but no mathematical operators except for the "-" sign. Max 100 characters.
+    return re.match(r"^[^\/\+\<\>\*]{5,100}$", recipe_name)
+
+
+def validate_recipe_text(recipe_text):
+    # Validate recipe ingredients and recipe instructions.
+    # Allow printable characters and spaces but no mathematical operators except for the "-" sign. Max 1000 characters.
+    return re.match(r"^[^\/\+\<\>\*]{5,1000}$", recipe_text)
+   
 
 app = Flask(__name__)
 
@@ -34,15 +61,28 @@ def search():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    # Check if the message is POST
     if request.method == "POST":
+        # Validate data
+        if request.form.get("username") == "" or not validate_username(
+            request.form.get("username")):
+            flash("Please enter a valid username")
+            return redirect(url_for("register"))
+        if request.form.get("password") == "" or not validate_password(
+           request.form.get("password")):
+            flash("Please enter a valid password")
+            return redirect(url_for("register"))
+
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
+        # If it does, flash message informing user that this username is already taken.
         if existing_user:
             flash("This username is already registered")
             return redirect(url_for("register"))
 
+        # Insert new user registration into database with data provided
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
