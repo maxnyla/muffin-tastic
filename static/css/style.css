@@ -35,7 +35,8 @@
 }
 
 .my-muffins-title {
-    color: #929718;
+    color: #737720;
+    /* color: #929718; */
     /* color:  #f8bbd0; */
 }
 
@@ -50,10 +51,16 @@
 }
 
 .my-muffins-text {
-    color: #929718;
+    color: #737720;
+    /* color: #929718; */
     font-size: 1.5em;
 }
 
+.my-muffins-bottom-pic {
+    height: 35em;
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
 
 .my-account-text {
     color: #737720;
@@ -62,8 +69,8 @@
 }
 
 .search-muffins-text { 
-    /* color: #8f9595;    */
-    color: #929718;
+    color: #737720;
+    /* color: #929718; */
 }
 
 .search-icon {
@@ -98,19 +105,28 @@
     /* color: #929718; */
 }
 
-
+.add-recipe-form {
+    background-color: #ee7aa20f;
+}
 
 .about-header {
     color: #ee7aa2;
 }
 
 .about-title {
-    color: #929718;
+    color: #737720;
+    /* color: #929718; */
     font-size: large;
 }
 
 .about-text {
-    color: #929718;
+    color: #737720;
+    /* color: #929718; */
+}
+
+.about-card {
+    background-color: #ee7aa214;
+    padding-bottom: 5em;
 }
 
 

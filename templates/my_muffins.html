@@ -29,14 +29,6 @@
     </div>
 </div>
 
-<!-- ADD RECIPE BUTTON
-            <div class="col s12 center-align">
-                <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
-                    <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
-                </button>
-            </div>
-<br>
-<br> -->
 
 <div class="row">
     {% for recipe in recipes %}
@@ -85,8 +77,11 @@
                     <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD MORE RECIPES</strong></a>
                 </button>
             </div>
-        <br>
-        <br>
 <!-- /END OF ADD RECIPE BUTTON-->
+
+<div class="parallax-container container-fluid my-muffins-bottom-pic">
+    <div class="parallax"><img class="responsive-img" src="../static/images/pic6.jpg"></div>
+</div>
+
 
 {% endblock %}
