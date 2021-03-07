@@ -180,6 +180,7 @@ def add_recipe():
             "recipe_name": request.form.get("recipe_name"),
             "recipe_description": request.form.get("recipe_description"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
+            # "recipe_ingredients": request.form.getlist("recipe_ingredients"),
             "recipe_instructions": request.form.get("recipe_instructions"),
             "category_name": request.form.get("category_name"),
             "recipe_difficulty": request.form.get("recipe_difficulty"),
