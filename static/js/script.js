@@ -8,7 +8,8 @@ $(document).ready(function () {
     $('#muffin-carousel-auto').carousel();
      setInterval(function() {
         $('#muffin-carousel-auto').carousel('next');
-    }, 3500); 
+    }, 3500);
+    $('.parallax').parallax();
 });
 
 
