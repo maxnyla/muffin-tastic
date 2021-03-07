@@ -49,9 +49,15 @@
     /* color: #929718; */
 }
 
-.my-muffins-text,
-.my-account-text {
+.my-muffins-text {
     color: #929718;
+    font-size: 1.5em;
+}
+
+
+.my-account-text {
+    color: #737720;
+    /* color: #929718; */
     font-size: 1.5em;
 }
 
@@ -80,15 +86,18 @@
 }
 
 .my-account-title {
-    color: #929718;
+    color: #737720;
+    /* color: #929718; */
     /* color: #8f9595; */
 }
 
 .my-account-intro {
-    color: #ee7aa2;
+    color: #ec407a;
+    /* color: #ee7aa2; */
     /* color: #8f9595; */
     /* color: #929718; */
 }
+
 
 
 .about-header {
@@ -116,13 +125,14 @@
 } */
 
 .account-left-text {
-    margin-top: 11em;
+    margin-top: 4em;
 }
 
 .account-right-text {
     margin-left: 1em;
-    margin-top: 11em;
+    margin-top: 4em;
 }
+
 /* 
 .account-right-pic {
     height: auto;
@@ -138,18 +148,36 @@
 
 
 
-@media screen and  (min-width: 1px) and (max-width: 768px) {
+@media screen and  (min-width: 1px) and (max-width: 800px) {
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
-.add-btn {
-    /* font-size  */
+.btn-large {
+    height: 50px;
+    line-height: 15px;
+    font-size: 9px;
+    padding: 0 10px;
+    /* padding: 0; */
+}
+
+.my-account-text  {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.account-left-text {
+    margin-top: 0;
+}
+
+.account-right-text {
+    margin-left: 0;
+    margin-top: 0;
 }
 
 
