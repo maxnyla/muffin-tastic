@@ -33,8 +33,22 @@
     line-height: 30px;
 }
 
+.category {
+    color: #615c5f;
+    /* color: #929718; */
+}
+
+.level {
+    color: #615c5f;
+}
+
+.owner {
+    color:#b9b625;
+}
+
 .inside-crd {
-	background-color: #f7fbf2;
+    background-color: #ffecf6;
+	/* background-color: #f7fbf2; */
 	/* background-color: #fef5f8
 	background-color: #ffc7de */
 }
