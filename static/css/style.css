@@ -24,10 +24,41 @@
     margin: 4px
 }
 
+.recipe-header{
+    font-weight: 350;
+}
+
 .card-content {
     margin: 5px;
     line-height: 30px;
 }
+
+.inside-crd {
+	background-color: #f7fbf2;
+	/* background-color: #fef5f8
+	background-color: #ffc7de */
+}
+
+.ingredients {
+    color: #595c1b;
+    /* color: #737720; */
+}
+
+.instructions {
+    color: #595c1b;
+    /* color: #737720; */
+}
+
+.ingredients-text {
+    color: #595c1b;
+     /* color: #737720; */
+}
+
+.instructions-text {
+    color: #595c1b;
+    /* color: #737720; */
+}
+
 
 .my-muffins-intro {
      color: #ee7aa2;

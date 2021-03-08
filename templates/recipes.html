@@ -107,14 +107,14 @@
                         <p><em>Created by: {{ recipe.created_by }}</em></p>
                 </div>
 
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4 recipe-header">{{ recipe.recipe_name }}<i class="fas fa-times right"></i>
+                <div class="card-reveal pink lighten-5 inside-crd">
+                    <span class="card-title pink-text text-darken-5 recipe-header">{{ recipe.recipe_name }}<i class="fas fa-times right"></i>
                     </span>
                         <h5 class= "ingredients">Ingredients:</h5>
-                            <p>{{ recipe.recipe_ingredients }}</p>
+                            <p class= "ingredients-text">{{ recipe.recipe_ingredients }}</p>
 
                         <h5 class="instructions">Instructions:</h5>
-                            <p>{{ recipe.recipe_instructions }}</p>
+                            <p class= "instructions-text">{{ recipe.recipe_instructions }}</p>
 
                         <div class="row">
                             <div class="col-10">
