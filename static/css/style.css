@@ -124,9 +124,12 @@
     /* color: #929718; */
 }
 
-.about-card {
+.about-sect {
     background-color: #ee7aa214;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 
@@ -158,6 +161,11 @@
 .add-muffin-footer {
     margin-top: 3em;
     margin-bottom: 2em;
+}
+
+account-container {
+    height: 40em;
+    margin-top: 2em;
 }
 
 
@@ -195,6 +203,17 @@ h4 {
     margin-left: 0;
     margin-top: 0;
 }
+
+.about-sect {
+    /* padding-bottom: 2em;
+    padding-top: 2em; */
+}
+
+account-container {
+    height: 25em;
+    margin-top: 0;
+}
+
 
 
 }
