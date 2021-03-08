@@ -53,11 +53,11 @@
 .my-muffins-text {
     color: #737720;
     /* color: #929718; */
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .my-muffins-bottom-pic {
-    height: 35em;
+    height: 30em;
     margin-bottom: 5em;
     margin-top: 3em;
 }
@@ -121,6 +121,7 @@
 
 .about-text {
     color: #737720;
+    font-size: 1.3em;
     /* color: #929718; */
 }
 
@@ -174,13 +175,13 @@ account-container {
 
 @media screen and  (min-width: 1px) and (max-width: 800px) {
 
-h3 {
-    font-size: 1.4em;
-}
+/* .my-muffins-title {
+    font-size: 1.5em;
+} */
 
-h4 {
+/* h4 {
     font-size: 1.3em;
-}
+} */
 
 .btn-large {
     height: 50px;
