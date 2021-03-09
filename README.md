@@ -1,45 +1,258 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<<p align="center">
+  <img src="../static/images/logo.1png" 
+alt="logo"/>
+</p>
 
-Welcome maxnyla,
+![Image containing example of responsiveness within several screens](assets/img/responsive.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+![Image containing example of responsiveness within several screens](assets/img/responsive2.png)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The aim of Muffin-Tastic is to provide an inspiring array of muffin recipes, and allow anyone to create an account for free so that they can also add their 
+own recipes to the site. Once they have registered an account they will be able to add recipes, edit them and delete them.
 
-`python3 -m http.server`
+**[View the live project here](https://muffin-tastic.herokuapp.com/)**
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+# Table of Contents :house: <a name="home"></a>
+1. [Introduction](#introduction)
+2. [UX](#ux)
+3. [Wireframes](#wireframes)
+4. [Visual Identity](#visualidentity)    
+5. [Site Overview](#siteoverview)
+6. [User Stories](#userstories)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Technologies](#technologies)
+10. [Media](#media)
+11. [Acknowledgements and thanks](#acknowledgements)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+## Introduction <a name="introduction"></a>
 
-Another blue button should appear to click: *Open Browser*.
+This site has been built as the Milestone Project number 3 for my Code Institute software development diploma. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+One of the main goals of the project is to create a full stack site which displays the CRUD principles: Create, Read, Update and Delete. Users need to be able to not only view data and have
+interactions with the site, but also be able to add their own data (in the form of recipes) and later on update and delete it if they so wish.
 
-## Updates Since The Instructional Video
+## UX <a name="ux"></a>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ **Logo and header**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- The logo is 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ **Navigation**
 
---------
 
-Happy coding!
+ **Home page**
+
+
+**Register page**
+
+
+**Log In/Log Out page**
+
+
+**My Account page**
+
+
+**Add Recipe page**
+
+
+**My Muffins page**
+
+
+
+## Wireframes <a name="wireframes"></a>
+
+All the wireframes were created with [Microsoft Paint](https://jspaint.app/).
+
+I created two wireframes for each page: one home page for the mobile view and another for the desktop view, and the same for the game page. 
+
+
+
+* The wireframes can be found here:
+
+[All wireframes for MS3 Muffin-Tastic](https://github.com/maxnyla/muffin-tastic/tree/master/assets/wireframes)
+
+
+[Home page wireframe web](https://github.com/maxnyla/muffin-tastic/tree/master/assets/wireframes/1-home_web.png)
+
+[Home page wireframe mobile](https://github.com/maxnyla/muffin-tastic/tree/master/assets/wireframes/2-home_mob.png)
+
+
+
+
+:house:[ Back to Table of Contents](#home)
+
+
+## Visual Identity <a name="visualidentity"></a>
+
+I used LogoMakr to design the logo. 
+
+
+### Site overview <a name="siteoverview"></a>
+
+Below are a series of images taken which show an overview of all the pages on the site and their different stages:
+
+**Home page:**
+
+![Home Page](assets/site_overview/home.png)
+
+
+
+
+
+For the purpose of improving user experience, I have compressed the images using [tinypng.com](https://tinypng.com/) 
+
+As can be seen below, the total reduction in image size on this site has been of % (MB).
+
+
+![tinypng image size saving results](assets/img/compression_result.png)
+
+
+
+## User Stories <a name="userstories"></a>
+
+The different goals and aims of the site, when viewed from a user perspective or the site owner's perspective are below.
+
+
+**Users:**
+
+
+
+**Site owner:**
+
+
+
+
+:house:[ Back to Table of Contents](#home)
+
+
+
+**Testing/Building the site**
+
+The full testing process for this project can be found [here](TESTING.md).
+
+
+
+## Deployment <a name="deployment"></a>
+
+**Deployment**
+
+This website has been deployed to Heroku as [Muffin-Tastic](https://muffin-tastic.herokuapp.com/).
+
+It was deployed ahead of time and modified on a number of occasions so that I would be able to check how things worked on different devices, and to ask others to test it themselves. 
+
+
+The process for deployment is documented below:
+
+
+
+
+![Deployment](assets/site_overview/deployed.png)
+
+
+
+## Technologies <a name="technologies"></a>
+
+
+For this project I have used the below technologies:
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) for the build of the site
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS) for the styling
+
+- [Javascript](https://jquery.com) for the interactive elements of the site, to initialize the Materialize elements that rtequired it.
+
+- [Gitpod](https://www.gitpod.io)
+    Since I am typing this text through Gitpod, I figured it would go first in the list. All code was created through Gitpod and the workspace for this project resides there.
+
+- [GitHub](https://www.github.com)
+    This has been used to host the project.
+
+- [Heroku](https://www.heroku.com)
+    This has been used to deploy the project.
+
+- [MongoDB](https://www.github.com)
+    This has been used to host the database.
+
+- [Materialize](https://materializecss.com)
+    Used as a framework for their grid system, navbars, forms, etc. I have also on many occasions modified the initial system for styling purposes.
+
+- [FontAwesome](https://fontawesome.com)
+    Used for the cup icon, which I have used on both pages.
+
+- [Cloudflare](https://www.cloudflare.com) 
+    Used for the scripts
+
+- [Code Beautify CSS beautifier](https://codebeautify.org)
+    Used to make my CSS look nicer and tidier
+
+- [Beautify Tools HTML beautifier](http://beautifytools.com/html-beautifier.php)
+    Used to make my HTML tidier 
+
+- [W3C Markup Validation Service](https://validator.w3.org)
+    Used to check my HTML code
+    
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator)
+    Used to check my CSS code
+
+
+I have also used the Chrome Developer Tools extensively throughout the project. They have been very useful for each change that I made, and to double-check my ideas before implementing them. 
+
+
+:house:[ Back to Table of Contents](#home)
+
+
+## Media <a name="media"></a>
+
+I have taken advantage of several useful resources for images and my logo. Please see below:
+
+- [Logo Makr](https://logomakr.com/) 
+    for the logo design
+
+- [Shutterstock](https://www.shutterstock.com/) 
+    I used this for the images
+
+- [Font Awesome](https://fontawesome.com/6?next=%2Fstart) 
+    for the icons used on this project
+
+- [Am I Responsive](http://ami.responsivedesign.is/) 
+    for the image used in the UX section showing the different screen sizes.
+
+- [Favicon](https://www.favicon.io)
+    for the thumbnail icon on the internet tab header
+
+
+
+
+## Acknowledgements and thanks <a name="acknowledgements"></a>
+
+I would like to mention all the different resources and sites that are out there, with their respective communities, which have been a huge help for me. 
+Some of them are:
+
+- Bootstrap
+- Git Hub and Git Pod
+- w3schools
+- Font Awesome
+- jQuery developers
+- LogoMakr
+- Vectorstock
+- Stack Overload
+- Freecodecamp
+- Slack 
+- Google (for all the things that I've looked up during this project, which have led me to all these amazing sites)
+- Thanks to Danika for letting me use her fantastic illustration
+- Of course I must mention my fantastic mentor Felipe Souza Alarcon for all his patience, help and ideas during this project, and his flexibility and availability. Always much 
+appreciated.
+
+And lastly, I could not leave out the Code Institute team: the other students on Slack, the tutor support and all the mentors who are always welcoming and trying to help.
+
+
+:house:[ Back to Table of Contents](#home)
