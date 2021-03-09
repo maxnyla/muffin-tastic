@@ -10,13 +10,14 @@ if os.path.exists("env.py"):
     import env
 
 
-# Validation functions
+# ======== VALIDATION  FUNCTIONS ======== #
 
 
 def validate_username(username):
     # Validate username.
-    # Allow letters, hyphens and underscores. No spaces.
+    # Allow letters, hyphens, numbers and underscores. Length 5-15 chars.
     return re.match("^[a-zA-Z0-9-_]{5,15}$", username)
+
 
 def validate_password(password):
     # Validate password.
@@ -26,15 +27,18 @@ def validate_password(password):
 
 def validate_recipe_name(recipe_name):
     # Validate recipe name.
-    # Allow printable characters and spaces but no mathematical operators except for the "-" sign. Max 100 characters.
+    # Allow printable characters and spaces but no mathematical operators other than the "-" sign. Max 100 characters.
     return re.match(r"^[^\/\+\<\>\*]{5,100}$", recipe_name)
 
 
 def validate_recipe_text(recipe_text):
     # Validate recipe ingredients and recipe instructions.
-    # Allow printable characters and spaces but no mathematical operators except for the "-" sign. Max 1000 characters.
+    # Allow printable characters and spaces but no mathematical operators other than the "-" sign. Max 1000 characters.
     return re.match(r"^[^\/\+\<\>\*]{5,1000}$", recipe_text)
-   
+
+ 
+# ======== CONFIG ======== #
+
 
 app = Flask(__name__)
 
@@ -43,6 +47,9 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+
+# ======== HOME ======== #
 
 
 @app.route("/")
@@ -57,6 +64,9 @@ def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
+
+
+# ======== USERS ======== #
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -94,7 +104,7 @@ def register():
         flash("User successfully registered")
         # redirect to account page
         return redirect(url_for("account", username=session["user"]))
-    
+
     # If method is not POST, check if user exists in session variable
     if session.get("username"):
         # If so, redirect user to account page and display flash message
@@ -172,6 +182,9 @@ def logout():
     return redirect(url_for("login"))
 
 
+# ======== RECIPES ======== #
+
+
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     # if form has been filled and submitted get these and add to db
@@ -232,22 +245,22 @@ def delete_recipe(recipe_id):
 
 @app.route("/my_muffins")
 def my_muffins():
-	recipes = mongo.db.recipes.find().sort("created_by")
-	return render_template("my_muffins.html", recipes=recipes)
+    recipes = mongo.db.recipes.find().sort("created_by")
+    return render_template("my_muffins.html", recipes=recipes)
 
 
 # ======== ERROR PAGES ======== #
 
 
-# Displays 404 error page
 @ app.errorhandler(404)
 def not_found(error):
+    # Displays 404 error page
     return render_template("404.html"), 404
 
 
-# Displays 505 error page
 @ app.errorhandler(505)
 def internal(error):
+    # Displays 505 error page
     return render_template("505.html"), 505
 
 
