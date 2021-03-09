@@ -236,6 +236,24 @@ def my_muffins():
 	return render_template("my_muffins.html", recipes=recipes)
 
 
+# ======== ERROR PAGES ======== #
+
+
+# Displays 404 error page
+@ app.errorhandler(404)
+def not_found(error):
+    return render_template("404.html"), 404
+
+
+# Displays 505 error page
+@ app.errorhandler(505)
+def internal(error):
+    return render_template("505.html"), 505
+
+
+# ============================================ #
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

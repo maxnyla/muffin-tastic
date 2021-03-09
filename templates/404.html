@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="my-muffins-title center-align"><i class="fas fa-sad-tear"></i> OOPS!</h3>
+
+<div class="my-muffins-header">
+    <div class="row center-align">
+            <div class="col s12 my-muffins-text">
+                <p> Hi there... </p>
+                <p> Something appears to have gone wrong...and you've somehow ended up at a dead end </p>
+                <p> Please click the button below to get you safely back to the main page</p>
+            </div>
+    </div>
+</div>
+
+<!-- BACK HOME BUTTON -->
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large pink pulse lighten-3 text-shadow add-recipe-btn">
+                    <a href="{{ url_for('get_recipes') }}" class="add-recipe-btn white-text"><strong>TAKE ME BACK HOME</strong></a>
+                </button>
+            </div>
+<!-- /END OF BACK HOME BUTTON-->
+
+<div class="parallax-container container-fluid my-muffins-bottom-pic">
+    <div class="parallax"><img class="responsive-img" src="../static/images/pic5.jpg"></div>
+</div>
+
+
+{% endblock %}
