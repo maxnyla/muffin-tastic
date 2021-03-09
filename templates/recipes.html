@@ -50,7 +50,7 @@
 
 <div class="search-muffins-header">
     <div class="row center-align">
-        <div class="col s10 m8">
+        <div class="col s12">
             <br>
             <h5 class="search-muffins-intro center-align">
                  <strong> Muffin search:
@@ -61,13 +61,13 @@
         <div class="row card-panel grey lighten-5">
             <form action="{{ url_for('search') }}" method="post" class="col s12">
                 <div class="row valign-wrapper center-align">
-                    <div class="input-field col s12 m8 search-icon">
+                    <div class="input-field col s12 search-icon">
                         <i class="fas fa-search search-icon prefix"></i>
                         <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                        <label for="query">Name or ingredient</label>
+                        <label for="query">Name/ingredient</label>
                     </div>
 
-                    <div class="col s12 m4">
+                    <div class="col s12">
                         <button type="submit" class="search-btn btn text-shadow"> FIND</button>
                         <a href="{{ url_for('get_recipes') }}" class="reset-btn btn text-shadow">  X  </a>
                     </div>
