@@ -117,7 +117,7 @@
                             <p class= "instructions-text">{{ recipe.recipe_instructions }}</p>
 
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col s12">
                                 <!-- <div class="row"> -->
                                     <div class="col delete-recipe">
                                         {% if session.user|lower == recipe.created_by|lower %}
@@ -146,11 +146,11 @@
 
 <!-- ADD RECIPE BUTTON start -->
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large pink lighten-3 text-shadow add-recipe-btn">
+                <button type="submit" class="btn-large pulse pink lighten-3 text-shadow add-recipe-btn">
                     {% if session.user %}   
-                    <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
+                    <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD MUFFIN</strong></a>
                     {% else %}
-                    <a href="{{ url_for('login') }}" class="add-recipe-btn white-text"><strong>ADD YOUR RECIPE</strong></a>
+                    <a href="{{ url_for('login') }}" class="add-recipe-btn white-text"><strong>ADD MUFFIN</strong></a>
                     {% endif %}
                 </button>
             </div>
