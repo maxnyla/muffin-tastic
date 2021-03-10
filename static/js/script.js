@@ -10,9 +10,8 @@ $(document).ready(function () {
         $('#muffin-carousel-auto').carousel('next');
     }, 3500);
     $('.parallax').parallax();
+    $('.modal').modal();
 });
-
-
 
 
     // validateMaterializeSelect();
