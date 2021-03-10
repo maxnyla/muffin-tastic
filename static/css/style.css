@@ -11,6 +11,24 @@
     color: #db4c7c;
 }
 
+.reg-page {
+    background: url("../images/pic5.jpg") no-repeat center center fixed;
+	background-size: cover;
+	display: flex; 
+	/* justify-content: center; */
+    min-height: 100vh;
+}
+
+.reg-wrapper {
+    background-color: white;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.reg-main {
+    margin-top: 2.5em;
+}
+
 .recipe-name {
     text-emphasis: emphasis;
 }
