@@ -8,7 +8,8 @@
 }
 
 .reg-title  {
-    color: #db4c7c;
+    color: #728833;
+    /* color: #db4c7c; */
 }
 
 .reg-page {
@@ -21,7 +22,7 @@
 
 .reg-wrapper {
     background-color: white;
-    margin-top: 4em;
+    margin-top: 7em;
     padding-left: 3em;
     padding-right: 3em;
 }
