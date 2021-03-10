@@ -34,16 +34,19 @@
 }
 
 .category {
-    color: #615c5f;
+    color: #252324;
+    /* color: #615c5f; */
     /* color: #929718; */
 }
 
 .level {
-    color: #615c5f;
+    color: #252324;
+    /* color: #615c5f; */
 }
 
 .owner {
-    color: #958120;
+    color: #f33e7c;
+    /* color: #958120; */
     /* color:#b9b625; */
 }
 
@@ -198,6 +201,7 @@
 
 .logo {
     height: 2em;
+    padding-left: 1em;
     width:  6em;
 }
 
