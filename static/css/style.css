@@ -7,8 +7,14 @@
     line-height: 3;
 }
 
+
+.login-title {
+    color: #f48fb1;
+}
+
 .reg-title  {
-    color: #728833;
+    color: #689f38;
+    /*color: #728833;*/
     /* color: #db4c7c; */
 }
 
