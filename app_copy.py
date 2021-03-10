@@ -76,11 +76,11 @@ def register():
         # Validate data in username
         if request.form.get("username") == "" or not validate_username(
             request.form.get("username")):
-            flash("Please enter a valid username")
+            flash("Please enter a valid username. Use letters, hyphens, numbers and underscores")
             return redirect(url_for("register"))
         if request.form.get("password") == "" or not validate_password(
            request.form.get("password")):
-            flash("Please enter a valid password")
+            flash("Please enter a valid password.Use any character between 5-15 characters")
             return redirect(url_for("register"))
 
         # check if username already exists in db
