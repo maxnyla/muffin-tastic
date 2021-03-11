@@ -63,13 +63,18 @@ in the site brand for maximum impact and clarity.
 The logo is encased in the site header, which is in a slightly muted pink colour. The fonts are white, for contrast. 
 
 
+
 **Navigation**
+
 
 This site is spread over a few pages. All pages have the same general colour scheme, and the exact same navbar and footer.
 The navbar and footer are in a candy-style pink colour and the fonts are white, with links to the other pages. There is also a button at the bottom of the footer 
 that brings the user back to the top of the home page.
 
+
+
 **Home page**
+
 
 This is the main landing page, where the user experience starts. There is an introduction to the site followed by a photo carousel and a search box
 where users are able to search for muffins. The search can be done by muffin name, keyword or ingredient. 
@@ -87,32 +92,39 @@ that takes them to the 'Register' page.
 
 Below is a view of the home page when logged out and when logged in:
 
+
+
 ![Image showing website page](/static/docs/readme/home_out.png)
-
 ![Image showing website page](/static/docs/readme/home_in.png)
-
 **Register page**
+
 
 Any users who are new to the site can access the 'Register' page from the home page and set up a new account. I decided to leave this as quite a simple 
 process and not require an email address for the account, or even a real name. A username and password will suffice. 
 Once the user has created their username and password, they can log in. The username and password undergo validation to ensure they meet the minimum
 requirements specified in the code:
 
+
 ![Image showing code](/static/docs/readme/username&pwd.png)
 
 
 If a user tries to register with an account name that has already been taken, they will be flashed a warning message stating that this username is not 
 available anymore.
+
 I chose a lime green colour for the flash messages because I believe that it complements the general colour scheme
 
-![Image showing code](/static/docs/readme/doubleregister.png)
+
+
+![Image showing page](/static/docs/readme/doubleregister.png)
 
 When a new user registers, they will be greeted with a flash message and be directed to their 'Account' page, which shows the options available to them
 such as adding muffin recipes and viewing their additions or deleting their account.
 
-![Image showing code](/static/docs/readme/registersuccess.png)
+
+![Image showing page](/static/docs/readme/registersuccess.png)
 
 **Log In/Log Out page**
+
 
 For the Log In and Log Out page I had initially gone with a white background and pink font matching the header and footer, but I thought that it lacked 
 something and therefore decided to make it more visually appealling by adding an image. I found an image that I really liked because it is bright and encompasses
@@ -121,11 +133,21 @@ most of the colour schemes that I display on the site, and thought that it would
 I set this as background and then created a blank white card for the login/logout information. Both pages (Log In and Log Out) are exactly the same when 
 it comes to colour scheme, but on logout a flash message is shown stating that the logout has been successful.
 
-![Image showing code](/static/docs/readme/login.png)
-![Image showing code](/static/docs/readme/logout.png)
+![Image showing page](/static/docs/readme/login.png)
+![Image showing page](/static/docs/readme/logout.png)
 
 **My Account page**
 
+
+Immediately after the user logs in, they are directed to their 'Account' Page with a greeting addressing them by their username. 
+
+The Account page shows them what the username is (this will remail after the flash message disappears, for example if they browse to another site page and 
+come back to their account page afterwards) and also shows them links to the page where they can add recipes and to the 'My Muffins' page, which groups 
+and displays all the recipes created by this user. 
+
+There is also an option to delete the account completely, to remove it from the system.
+
+![Image showing page](/static/docs/readme/account.png)
 
 
 **Add Recipe page**
