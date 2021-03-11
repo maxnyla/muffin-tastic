@@ -69,24 +69,24 @@ This site is spread over a few pages. All pages have the same general colour sch
 The navbar and footer are in a candy-style pink colour and the fonts are white, with links to the other pages. There is also a button at the bottom of the footer 
 that brings the user back to the top of the home page.
 
-    *Home page*
+**Home page**
 
-    This is the main landing page, where the user experience starts. There is an introduction to the site followed by a photo carousel and a search box
-    where users are able to search for muffins. The search can be done by muffin name, keyword or ingredient. 
+This is the main landing page, where the user experience starts. There is an introduction to the site followed by a photo carousel and a search box
+where users are able to search for muffins. The search can be done by muffin name, keyword or ingredient. 
 
-    Below the search box, a display of cards showing all the different recipes can be found. These cards will open on click and show the ingredient list and 
-    instructions details once clicked. Also, for any recipes added by each user this will show them an edit and delete button so that they can delete the 
-    recipe at any point if they wish. When the cards are unopened, they show a photo with the name of the muffin and a short description stating
-    the category that the muffin belongs to (sweet or savoury and difficulty level) and the name of the author.
+Below the search box, a display of cards showing all the different recipes can be found. These cards will open on click and show the ingredient list and 
+instructions details once clicked. Also, for any recipes added by each user this will show them an edit and delete button so that they can delete the 
+recipe at any point if they wish. When the cards are unopened, they show a photo with the name of the muffin and a short description stating
+the category that the muffin belongs to (sweet or savoury and difficulty level) and the name of the author.
 
-    Under the muffin selection is a bit of text encouraging the users to add their own muffins with a colourful flashing button. This button leads to the 
-    'add muffin' page where users are able to add their recipes.
+Under the muffin selection is a bit of text encouraging the users to add their own muffins with a colourful flashing button. This button leads to the 
+'add muffin' page where users are able to add their recipes.
  
-    If the user is not logged in at the time, it will direct them to the login page instead. 
+If the user is not logged in at the time, it will direct them to the login page instead. 
 
-    *Register page*
+**Register page**
 
-    
+
 
 
 
