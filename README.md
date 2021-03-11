@@ -3,13 +3,14 @@
 alt="logo"/>
 </p>
 
-![Image containing example of responsiveness within several screens](assets/img/responsive.png)
+![Image containing example of responsiveness within several screens](/static/docs/readme/responsive.png)
 
-![Image containing example of responsiveness within several screens](assets/img/responsive2.png)
+![Image containing example of responsiveness within several screens](/static/docs/readme/responsive2.png)
 
 
 The aim of Muffin-Tastic is to provide an inspiring array of muffin recipes, and allow anyone to create an account for free so that they can also add their 
-own recipes to the site. Once they have registered an account they will be able to add recipes, edit them and delete them.
+own recipes to the site. Once users have have registered a (free) account they will be able to add recipes to the site, edit them and delete them if they so wish.
+Users are also able to delete their account which will delete the muffins from the site as well. 
 
 **[View the live project here](https://muffin-tastic.herokuapp.com/)**
 
