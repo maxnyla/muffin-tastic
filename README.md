@@ -87,14 +87,9 @@ that takes them to the 'Register' page.
 
 Below is a view of the home page when logged out and when logged in:
 
-![Image showing website page](/static/docs/readme/homeloggedout.png)
+![Image showing website page](/static/docs/readme/home_out.png)
 
-![Image showing website page](/static/docs/readme/homeloggedin1.png)
-
-![Image showing website page](/static/docs/readme/homeloggedin2.png)
-
-![Image showing website page](/static/docs/readme/homeloggedin3.png)
-
+![Image showing website page](/static/docs/readme/home_in.png)
 
 
 **Register page**
@@ -105,8 +100,7 @@ Once the user has created their username and password, they can log in. The user
 requirements specified in the code:
 
 
-*Code example*
-                <!-- username -->
+*Username*
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="fas fa-user-plus prefix light-green-text text-darken-5"></i>
@@ -117,7 +111,8 @@ requirements specified in the code:
                         </div>
 
 
-*                <!-- password -->*
+
+*Password*                
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="fas fa-user-lock prefix light-green-text text-darken-5"></i>
