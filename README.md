@@ -91,7 +91,6 @@ Below is a view of the home page when logged out and when logged in:
 
 ![Image showing website page](/static/docs/readme/home_in.png)
 
-
 **Register page**
 
 Any users who are new to the site can access the 'Register' page from the home page and set up a new account. I decided to leave this as quite a simple 
@@ -99,35 +98,34 @@ process and not require an email address for the account, or even a real name. A
 Once the user has created their username and password, they can log in. The username and password undergo validation to ensure they meet the minimum
 requirements specified in the code:
 
-
-*Username*
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="fas fa-user-plus prefix light-green-text text-darken-5"></i>
-                                    <input id="username" name="username" type="text" minlength="5"
-                                             maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
-                                    <label for="username">Username: 5-15 characters</label>
-                            </div>
-                        </div>
+![Image showing code](/static/docs/readme/username&pwd.png)
 
 
+If a user tries to register with an account name that has already been taken, they will be flashed a warning message stating that this username is not 
+available anymore.
+I chose a lime green colour for the flash messages because I believe that it complements the general colour scheme
 
-*Password*                
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="fas fa-user-lock prefix light-green-text text-darken-5"></i>
-                                    <input id="password" name="password" type="password" minlength="5"
-                                        maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
-                                    <label for="password">Password: 5-15 characters</label>
-                            </div>
-                        </div>
+![Image showing code](/static/docs/readme/doubleregister.png)
 
+When a new user registers, they will be greeted with a flash message and be directed to their 'Account' page, which shows the options available to them
+such as adding muffin recipes and viewing their additions or deleting their account.
 
+![Image showing code](/static/docs/readme/registersuccess.png)
 
 **Log In/Log Out page**
 
+For the Log In and Log Out page I had initially gone with a white background and pink font matching the header and footer, but I thought that it lacked 
+something and therefore decided to make it more visually appealling by adding an image. I found an image that I really liked because it is bright and encompasses
+most of the colour schemes that I display on the site, and thought that it would make a great background photo.
+
+I set this as background and then created a blank white card for the login/logout information. Both pages (Log In and Log Out) are exactly the same when 
+it comes to colour scheme, but on logout a flash message is shown stating that the logout has been successful.
+
+![Image showing code](/static/docs/readme/login.png)
+![Image showing code](/static/docs/readme/logout.png)
 
 **My Account page**
+
 
 
 **Add Recipe page**
