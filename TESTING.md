@@ -1,11 +1,12 @@
-<<p align="center">
-  <img src="/static/images/logo.1png" 
+<p align="center">
+  <img src="/static/images/logo1.png" 
 alt="logo"/>
 </p>
 
-![Image containing example of responsiveness within several screens](assets/img/responsive.png)
 
-![Image containing example of responsiveness within several screens](assets/img/responsive2.png)
+![Image containing example of responsiveness within several screens](/static/docs/readme/responsive.png)
+
+![Image containing example of responsiveness within several screens](/static/docs/readme/responsive1.png)
 
 
 The aim of Muffin-Tastic is to provide an inspiring array of muffin recipes, and allow anyone to create an account for free so that they can also add their 
