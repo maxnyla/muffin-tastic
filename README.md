@@ -18,10 +18,10 @@ Users are also able to delete their account which will delete the muffins from t
 
 # Table of Contents :house: <a name="home"></a>
 1. [Introduction](#introduction)
-2. [UX](#ux)
+2. [UX and  Visual Identity](#ux)
 3. [Wireframes](#wireframes)
-4. [Visual Identity](#visualidentity)    
-5. [Site Overview](#siteoverview)
+4.   
+5. 
 6. [User Stories](#userstories)
 7. [Testing](#testing)
 8. [Deployment](#deployment)
@@ -45,7 +45,7 @@ The site also allows users to search for recipes that interest them and view exa
 
 
 
-## UX <a name="ux"></a>
+## UX and Visual Identity<a name="ux"></a>
 
 
 
@@ -153,7 +153,20 @@ There is also an option to delete the account completely, to remove it from the 
 **Add Recipe page**
 
 
+
+
+
+
+
+
 **My Muffins page**
+
+
+
+
+
+
+
 
 
 
@@ -167,12 +180,13 @@ I created two wireframes for each page: one home page for the mobile view and an
 
 * The wireframes can be found here:
 
-[All wireframes for MS3 Muffin-Tastic](https://github.com/maxnyla/muffin-tastic/tree/master/assets/wireframes)
+[All wireframes for MS3 Muffin-Tastic](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/)
 
 
-[Home page wireframe web](https://github.com/maxnyla/muffin-tastic/tree/master/assets/wireframes/1-home_web.png)
+[Home page wireframe web](https://github.com/maxnyla/muffin-tastic/tree/master/assets/static/docs/wireframes/1-home_web.png)
 
-[Home page wireframe mobile](https://github.com/maxnyla/muffin-tastic/tree/master/assets/wireframes/2-home_mob.png)
+[Home page wireframe mobile](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/2-home_mob.png)
+
 
 
 
@@ -180,18 +194,21 @@ I created two wireframes for each page: one home page for the mobile view and an
 :house:[ Back to Table of Contents](#home)
 
 
-## Visual Identity <a name="visualidentity"></a>
-
-I used LogoMakr to design the logo. 
 
 
-### Site overview <a name="siteoverview"></a>
 
-Below are a series of images taken which show an overview of all the pages on the site and their different stages:
+## 
 
-**Home page:**
 
-![Home Page](assets/site_overview/home.png)
+
+
+
+
+
+
+**    **
+
+
 
 
 
@@ -303,20 +320,41 @@ I have also used the Chrome Developer Tools extensively throughout the project. 
 
 I have taken advantage of several useful resources for images and my logo. Please see below:
 
-- [Logo Makr](https://logomakr.com/) 
-    for the logo design
+- Logo:
 
-- [Shutterstock](https://www.shutterstock.com/) 
-    I used this for the images
+For the logo design I used the Logo Makr website. I simply searched for muffin designs and took one that I liked, before 
+adding some text with the brand name to it.
 
-- [Font Awesome](https://fontawesome.com/6?next=%2Fstart) 
-    for the icons used on this project
+[Logo Makr](https://logomakr.com/) 
+    
 
-- [Am I Responsive](http://ami.responsivedesign.is/) 
-    for the image used in the UX section showing the different screen sizes.
+- Site images: 
 
-- [Favicon](https://www.favicon.io)
-    for the thumbnail icon on the internet tab header
+I found all the images that I wanted to use for the carousel and the general site from the Shutterstock website:
+
+[Shutterstock](https://www.shutterstock.com/) 
+
+With regards to the recipe images within the muffin recipes, I used the image that was provided in each recipe on the BBC Good Food website,
+where I took the recipes from:
+
+[BBC Good Food](https://www.bbcgoodfood.com/)
+
+
+For the image used in the header of this Readme file showing the different screen sizes, I used the Am I Responsive website:
+
+[Am I Responsive](http://ami.responsivedesign.is/) 
+
+The thumbnail icon used on the internet tab header was sourced from the Favicon site. I used the same image that I already had for the logo and uploaded it
+to the Favicon site for the favicon to be automatically generated:
+
+[Favicon](https://www.favicon.io)
+
+
+- Icons:
+
+I decided not to use the Materialize icons and instead went with the Font Awesome icon packs. I used the free tier:
+
+[Font Awesome](https://fontawesome.com/6?next=%2Fstart) 
 
 
 
