@@ -182,7 +182,6 @@ I created two wireframes for each page: one home page for the mobile view and an
 
 [All wireframes for MS3 Muffin-Tastic](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/)
 
-
 [Home page wireframe web](https://github.com/maxnyla/muffin-tastic/tree/master/assets/static/docs/wireframes/1-home_web.png)
 
 [Home page wireframe mobile](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/2-home_mob.png)
@@ -228,7 +227,11 @@ As can be seen below, the total reduction in image size on this site has been of
 The different goals and aims of the site, when viewed from a user perspective or the site owner's perspective are below.
 
 
+
+
 **Users:**
+
+
 
 
 
@@ -320,7 +323,7 @@ I have also used the Chrome Developer Tools extensively throughout the project. 
 
 I have taken advantage of several useful resources for images and my logo. Please see below:
 
-- Logo:
+**Logo:**
 
 For the logo design I used the Logo Makr website. I simply searched for muffin designs and took one that I liked, before 
 adding some text with the brand name to it.
@@ -328,7 +331,7 @@ adding some text with the brand name to it.
 [Logo Makr](https://logomakr.com/) 
     
 
-- Site images: 
+**Site images:** 
 
 I found all the images that I wanted to use for the carousel and the general site from the Shutterstock website:
 
@@ -350,7 +353,7 @@ to the Favicon site for the favicon to be automatically generated:
 [Favicon](https://www.favicon.io)
 
 
-- Icons:
+**Icons:**
 
 I decided not to use the Materialize icons and instead went with the Font Awesome icon packs. I used the free tier:
 
@@ -364,18 +367,17 @@ I decided not to use the Materialize icons and instead went with the Font Awesom
 I would like to mention all the different resources and sites that are out there, with their respective communities, which have been a huge help for me. 
 Some of them are:
 
-- Bootstrap
+- Materialize
 - Git Hub and Git Pod
 - w3schools
 - Font Awesome
 - jQuery developers
 - LogoMakr
-- Vectorstock
+- Shutterstock
 - Stack Overload
 - Freecodecamp
 - Slack 
 - Google (for all the things that I've looked up during this project, which have led me to all these amazing sites)
-- Thanks to Danika for letting me use her fantastic illustration
 - Of course I must mention my fantastic mentor Felipe Souza Alarcon for all his patience, help and ideas during this project, and his flexibility and availability. Always much 
 appreciated.
 
