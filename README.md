@@ -87,13 +87,13 @@ that takes them to the 'Register' page.
 
 Below is a view of the home page when logged out and when logged in:
 
-(/static/docs/readme/homeloggedout.png)
+![Image showing website page](/static/docs/readme/homeloggedout.png)
 
-(/static/docs/readme/homeloggedin1.png)
+![Image showing website page](/static/docs/readme/homeloggedin1.png)
 
-(/static/docs/readme/homeloggedin2.png)
+![Image showing website page](/static/docs/readme/homeloggedin2.png)
 
-(/static/docs/readme/homeloggedin3.png)
+![Image showing website page](/static/docs/readme/homeloggedin3.png)
 
 
 
@@ -105,7 +105,7 @@ Once the user has created their username and password, they can log in. The user
 requirements specified in the code:
 
 
-*<form class="col s12" method="POST" action="{{ url_for('register') }}">*
+*<form class="col s12" method="POST" action="{{ url_for('register') }}">
                             <div class="card-panel">
                                 <!-- username -->
                                 <div class="row">
@@ -125,7 +125,7 @@ requirements specified in the code:
                                             maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
                                         <label for="password">Password: 5-15 characters</label>
                                     </div>
-                                </div>
+                                </div>*
 
 
 **Log In/Log Out page**
