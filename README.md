@@ -34,27 +34,61 @@ Users are also able to delete their account which will delete the muffins from t
 
 This site has been built as the Milestone Project number 3 for my Code Institute software development diploma. 
 
-One of the main goals of the project is to create a full stack site which displays the CRUD principles: Create, Read, Update and Delete. Users need to be able to not only view data and have
-interactions with the site, but also be able to add their own data (in the form of recipes) and later on update and delete it if they so wish.
+One of the main goals of this project is to create a full stack site which displays the CRUD principles: Create, Read, Update and Delete. 
+Users need to be able to not only view the data displayed on the website, but also be able to have interactions with the site, 
+as well as add their own data and later on have the option to update and delete it if they so wish.
+
+In this case, the project is a recipe sharing site where users are able to view recipes and create an account in order to share their own. They can
+then delete the data at any time. 
+
+The site also allows users to search for recipes that interest them and view exact instructions on how to recreate them.
+
+
 
 ## UX <a name="ux"></a>
 
 
 
+ **Logo and branding**
 
- **Logo and header**
 
+In keeping with the general 'cute' design of the rest of the site, the logo is a cartoon-like depiction of a muffin. It's simple, with basic and clean lines 
+in a neutral colour with no added colour to it. Since the rest of the site is quite colourful, I felt like it was a good idea to keep the logo simple.
+The logo includes the name of the site. 
 
-- The logo is 
+The name for the site was chosen because of its playful undertones and the association with the word 'fantastic' that is immediately conveys, as well as including
+the key word 'muffin' which means that it's self descriptive. Since this is a recipe site only for muffin recipes, I thought it a good idea to include that 
+in the site brand for maximum impact and clarity.
+
+The logo is encased in the site header, which is in a slightly muted pink colour. The fonts are white, for contrast. 
 
 
  **Navigation**
 
+This site is spread over a few pages. All pages have the same general colour scheme, and the exact same navbar and footer.
+The navbar and footer are in a candy-style pink colour and the fonts are white, with links to the other pages. There is also a button at the bottom of the footer 
+that brings the user back to the top of the home page.
 
- **Home page**
+    *Home page*
+
+    This is the main landing page, where the user experience starts. There is an introduction to the site followed by a photo carousel and a search box
+    where users are able to search for muffins. The search can be done by muffin name, keyword or ingredient. 
+
+    Below the search box, a display of cards showing all the different recipes can be found. These cards will open on click and show the ingredient list and 
+    instructions details once clicked. Also, for any recipes added by each user this will show them an edit and delete button so that they can delete the 
+    recipe at any point if they wish. When the cards are unopened, they show a photo with the name of the muffin and a short description stating
+    the category that the muffin belongs to (sweet or savoury and difficulty level) and the name of the author.
+
+    Under the muffin selection is a bit of text encouraging the users to add their own muffins with a colourful flashing button. This button leads to the 
+    'add muffin' page where users are able to add their recipes.
+ 
+    If the user is not logged in at the time, it will direct them to the login page instead. 
+
+    *Register page*
+
+    
 
 
-**Register page**
 
 
 **Log In/Log Out page**

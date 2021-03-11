@@ -201,7 +201,7 @@ def delete_account(username):
     mongo.db.users.remove({"username": username.lower()})
     flash("Your account has been deleted")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("register"))
 
 
 # ======== RECIPES ======== #
@@ -209,7 +209,7 @@ def delete_account(username):
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
-    # if form has been filled and submitted get these details and insert in db
+    # if form has been filled and submitted get these and add to db
     if request.method == "POST":
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
