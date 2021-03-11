@@ -49,7 +49,7 @@ The site also allows users to search for recipes that interest them and view exa
 
 
 
- **Logo and branding**
+**Logo and branding**
 
 
 In keeping with the general 'cute' design of the rest of the site, the logo is a cartoon-like depiction of a muffin. It's simple, with basic and clean lines 
@@ -63,7 +63,7 @@ in the site brand for maximum impact and clarity.
 The logo is encased in the site header, which is in a slightly muted pink colour. The fonts are white, for contrast. 
 
 
- **Navigation**
+**Navigation**
 
 This site is spread over a few pages. All pages have the same general colour scheme, and the exact same navbar and footer.
 The navbar and footer are in a candy-style pink colour and the fonts are white, with links to the other pages. There is also a button at the bottom of the footer 
@@ -80,15 +80,52 @@ recipe at any point if they wish. When the cards are unopened, they show a photo
 the category that the muffin belongs to (sweet or savoury and difficulty level) and the name of the author.
 
 Under the muffin selection is a bit of text encouraging the users to add their own muffins with a colourful flashing button. This button leads to the 
-'add muffin' page where users are able to add their recipes.
+'Add muffin' page where users are able to add their recipes.
  
-If the user is not logged in at the time, it will direct them to the login page instead. 
+If the user is not logged in at the time, it will direct them to the login page instead. Ifthe user is not registered yet, they have a link under the login box
+that takes them to the 'Register' page.
+
+Below is a view of the home page when logged out and when logged in:
+
+(/static/docs/readme/homeloggedout.png)
+
+(/static/docs/readme/homeloggedin1.png)
+
+(/static/docs/readme/homeloggedin2.png)
+
+(/static/docs/readme/homeloggedin3.png)
+
+
 
 **Register page**
 
+Any users who are new to the site can access the 'Register' page from the home page and set up a new account. I decided to leave this as quite a simple 
+process and not require an email address for the account, or even a real name. A username and password will suffice. 
+Once the user has created their username and password, they can log in. The username and password undergo validation to ensure they meet the minimum
+requirements specified in the code:
 
 
+*<form class="col s12" method="POST" action="{{ url_for('register') }}">*
+                            <div class="card-panel">
+                                <!-- username -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-user-plus prefix light-green-text text-darken-5"></i>
+                                        <input id="username" name="username" type="text" minlength="5"
+                                            maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
+                                        <label for="username">Username: 5-15 characters</label>
+                                    </div>
+                                </div>
 
+                                <!-- password -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="fas fa-user-lock prefix light-green-text text-darken-5"></i>
+                                        <input id="password" name="password" type="password" minlength="5"
+                                            maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
+                                        <label for="password">Password: 5-15 characters</label>
+                                    </div>
+                                </div>
 
 
 **Log In/Log Out page**
