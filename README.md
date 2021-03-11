@@ -105,27 +105,27 @@ Once the user has created their username and password, they can log in. The user
 requirements specified in the code:
 
 
-*<form class="col s12" method="POST" action="{{ url_for('register') }}">
-                            <div class="card-panel">
-                                <!-- username -->
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <i class="fas fa-user-plus prefix light-green-text text-darken-5"></i>
-                                        <input id="username" name="username" type="text" minlength="5"
-                                            maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
-                                        <label for="username">Username: 5-15 characters</label>
-                                    </div>
-                                </div>
+*Code example*
+                <!-- username -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="fas fa-user-plus prefix light-green-text text-darken-5"></i>
+                                    <input id="username" name="username" type="text" minlength="5"
+                                             maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
+                                    <label for="username">Username: 5-15 characters</label>
+                            </div>
+                        </div>
 
-                                <!-- password -->
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <i class="fas fa-user-lock prefix light-green-text text-darken-5"></i>
-                                        <input id="password" name="password" type="password" minlength="5"
-                                            maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
-                                        <label for="password">Password: 5-15 characters</label>
-                                    </div>
-                                </div>*
+                <!-- password -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="fas fa-user-lock prefix light-green-text text-darken-5"></i>
+                                    <input id="password" name="password" type="password" minlength="5"
+                                        maxlength="15" pattern="^[a-zA-Z0-9-_]{5,15}$" class="validate" required>
+                                    <label for="password">Password: 5-15 characters</label>
+                            </div>
+                        </div>
+
 
 
 **Log In/Log Out page**
