@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="/static/images/logo.1png" 
+  <img src="/static/images/logo1.png" 
 alt="logo"/>
 </p>
-(/static/images/logo1.png)
+
 
 ![Image containing example of responsiveness within several screens](/static/docs/readme/responsive.png)
 
