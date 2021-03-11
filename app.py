@@ -27,18 +27,28 @@ def validate_password(password):
 
 def validate_recipe_name(recipe_name):
     # Validate recipe name.
-    # Allow printable characters and spaces but no mathematical operators
-    # other than the "-" sign. Max 100 characters.
-    return re.match(r"^[^\/\+\<\>\*]{5,100}$", recipe_name)
+    # Allow any character, 5- 100 characters.
+    return re.match("^.{5,100}$", recipe_name)
 
 
-def validate_recipe_text(recipe_text):
+def validate_recipe_description(recipe_description):
+    # Validate recipe ingredients.
+    # Allow any character. 5- 1000 characters.
+    return re.match("^.{5,1000}$", recipe_description)
+
+
+def validate_recipe_instructions(recipe_instructions):
+    # Validate recipe instructions.
+    # Allow any character. 5-1000 characters.
+    return re.match("^.{5,1000}$", recipe_instructions)
+
+
+def validate_recipe_image(recipe_image):
     # Validate recipe ingredients and recipe instructions.
-    # Allow printable characters and spaces but no mathematical operators 
-    # other than the "-" sign. Max 1000 characters.
-    return re.match(r"^[^\/\+\<\>\*]{5,1000}$", recipe_text)
+    # Allow any character between 5-200 characters.
+    return re.match("^.{5,200}$", recipe_image)
 
- 
+
 # ======== CONFIG ======== #
 
 

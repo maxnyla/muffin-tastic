@@ -27,13 +27,15 @@ def validate_password(password):
 
 def validate_recipe_name(recipe_name):
     # Validate recipe name.
-    # Allow printable characters and spaces but no mathematical operators other than the "-" sign. Max 100 characters.
+    # Allow printable characters and spaces but no mathematical operators
+    # other than the "-" sign. Max 100 characters.
     return re.match(r"^[^\/\+\<\>\*]{5,100}$", recipe_name)
 
 
 def validate_recipe_text(recipe_text):
     # Validate recipe ingredients and recipe instructions.
-    # Allow printable characters and spaces but no mathematical operators other than the "-" sign. Max 1000 characters.
+    # Allow printable characters and spaces but no mathematical operators 
+    # other than the "-" sign. Max 1000 characters.
     return re.match(r"^[^\/\+\<\>\*]{5,1000}$", recipe_text)
 
  
@@ -167,10 +169,10 @@ def account(username):
     # get session user's username from the db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-
+    # show username in session their page
     if session["user"]:
         return render_template("account.html", username=username)
-
+    # or else send them to login page
     return redirect(url_for("login"))
 
 
@@ -178,6 +180,16 @@ def account(username):
 def logout():
     # remove the user from session cookie
     flash("You are now logged out")
+    session.pop("user")
+    # redirect to login page
+    return redirect(url_for("login"))
+
+
+@app.route("/delete_account/<username>")
+def delete_account(username):
+    # delete the account from the site
+    mongo.db.users.remove({"username": username.lower()})
+    flash("Your account has been deleted")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -187,7 +199,7 @@ def logout():
 
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
-    # if form has been filled and submitted get these and add to db
+    # if form has been filled and submitted get these details and insert in db
     if request.method == "POST":
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
@@ -200,8 +212,10 @@ def add_recipe():
             "created_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
+        # flash confirmation message
         flash("Your recipe has been added!")
-        return redirect(url_for("get_recipes"))
+        # redirect to main recipe page
+        return redirect(url_for("my_muffins"))
 
     # if form was not submitted
     categories = mongo.db.categories.find().sort("category_name", 1)
