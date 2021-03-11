@@ -116,7 +116,8 @@ requirements specified in the code:
                             </div>
                         </div>
 
-                <!-- password -->
+
+*                <!-- password -->*
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="fas fa-user-lock prefix light-green-text text-darken-5"></i>
