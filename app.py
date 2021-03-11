@@ -215,7 +215,7 @@ def add_recipe():
         # flash confirmation message
         flash("Your recipe has been added!")
         # redirect to main recipe page
-        return redirect(url_for("get_recipes"))
+        return redirect(url_for("my_muffins"))
 
     # if form was not submitted
     categories = mongo.db.categories.find().sort("category_name", 1)
