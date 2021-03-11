@@ -90,12 +90,24 @@ Under the muffin selection is a bit of text encouraging the users to add their o
 If the user is not logged in at the time, it will direct them to the login page instead. Ifthe user is not registered yet, they have a link under the login box
 that takes them to the 'Register' page.
 
-Below is a view of the home page when logged out and when logged in:
+
+Below is a view of the home page when logged out:
 
 
 
 ![Image showing website page](/static/docs/readme/home_out.png)
+
+
+
+And when logged in:
+
+
+
 ![Image showing website page](/static/docs/readme/home_in.png)
+
+
+
+
 **Register page**
 
 
@@ -105,7 +117,9 @@ Once the user has created their username and password, they can log in. The user
 requirements specified in the code:
 
 
+
 ![Image showing code](/static/docs/readme/username&pwd.png)
+
 
 
 If a user tries to register with an account name that has already been taken, they will be flashed a warning message stating that this username is not 
@@ -115,13 +129,21 @@ I chose a lime green colour for the flash messages because I believe that it com
 
 
 
+
 ![Image showing page](/static/docs/readme/doubleregister.png)
+
+
 
 When a new user registers, they will be greeted with a flash message and be directed to their 'Account' page, which shows the options available to them
 such as adding muffin recipes and viewing their additions or deleting their account.
 
 
+
+
 ![Image showing page](/static/docs/readme/registersuccess.png)
+
+
+
 
 **Log In/Log Out page**
 
@@ -133,8 +155,14 @@ most of the colour schemes that I display on the site, and thought that it would
 I set this as background and then created a blank white card for the login/logout information. Both pages (Log In and Log Out) are exactly the same when 
 it comes to colour scheme, but on logout a flash message is shown stating that the logout has been successful.
 
+
 ![Image showing page](/static/docs/readme/login.png)
+
+
 ![Image showing page](/static/docs/readme/logout.png)
+
+
+
 
 **My Account page**
 
@@ -148,6 +176,7 @@ and displays all the recipes created by this user.
 There is also an option to delete the account completely, to remove it from the system.
 
 ![Image showing page](/static/docs/readme/account.png)
+
 
 
 **Add Recipe page**
