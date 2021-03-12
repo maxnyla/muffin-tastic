@@ -303,6 +303,26 @@ This site is created for users to share muffin recipes, and get inspiration them
 - As a user, I want to see the difficulty level of muffin recipes at first glance without having to open their respective cards.
 
 
+
+
+#### *Colour scheme*
+
+I used the same colours throughout the site, with mild variations whilst keeping with the hue and theme. I also chose images that complemented these colours.
+
+These were used as the main colours:
+
+- white: "white"
+- black: "black"
+- pink: #ee7aa2
+- grey: #80817a
+- green: #595C1B
+- light green: #F1F8E9
+
+The colour wheel for my base colour scheme can be found below:
+
+![image of main colours](/static/docs/readme/logout.png)
+
+
 :house:[ Back to Table of Contents](#home)
 
 
