@@ -67,14 +67,19 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
+    # find list of all recipes from db
     recipes = list(mongo.db.recipes.find())
+    # display them for all users, logged in or not
     return render_template("recipes.html", recipes=recipes)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    # when data entered in search form
     query = request.form.get("query")
+    # query database for contents of search
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
+    # display results of matches
     return render_template("recipes.html", recipes=recipes)
 
 
@@ -87,19 +92,18 @@ def register():
     if request.method == "POST":
         # Validate data in username
         if request.form.get("username") == "" or not validate_username(
-            request.form.get("username")):
-            flash("Please enter a valid username. Use letters, hyphens, numbers and underscores")
+                request.form.get("username")):
+            flash("Please enter a valid username: letters,hyphens, nrs and _")
             return redirect(url_for("register"))
         if request.form.get("password") == "" or not validate_password(
            request.form.get("password")):
-            flash("Please enter a valid password.Use any character between 5-15 characters")
+            flash("Please enter a valid password: any char between 5-15 chars")
             return redirect(url_for("register"))
 
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-
-        # If it does, flash message informing user that this username is already taken.
+        # If it does, flash message informing user username is taken.
         if existing_user:
             flash("This username is already taken")
             return redirect(url_for("register"))
@@ -154,7 +158,7 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     # flash success message
                     flash("Hi, {}!".format(
@@ -240,12 +244,12 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    # if form has been filled and submitted add edits to db
     if request.method == "POST":
         submit = {
             "recipe_name": request.form.get("recipe_name"),
             "recipe_description": request.form.get("recipe_description"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
-            # "recipe_ingredients": request.form.getlist("recipe_ingredients"),
             "recipe_instructions": request.form.get("recipe_instructions"),
             "category_name": request.form.get("category_name"),
             "recipe_difficulty": request.form.get("recipe_difficulty"),
@@ -253,11 +257,14 @@ def edit_recipe(recipe_id):
             "created_by": session["user"]
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
+        # flash confirmation message
         flash("Your recipe has been edited")
 
+    # if form was not submitted with edits
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     levels = mongo.db.levels.find().sort("recipe_difficulty", 1)
+    # return to edit page
     return render_template(
         "edit_recipe.html", recipe=recipe, categories=categories,
         levels=levels)
@@ -265,14 +272,18 @@ def edit_recipe(recipe_id):
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
+    # remove this recipe id from db
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("This recipe has been deleted")
+    # redirect to main page
     return redirect(url_for("get_recipes"))
 
 
 @app.route("/my_muffins")
 def my_muffins():
+    # sort muffins by user who created them
     recipes = mongo.db.recipes.find().sort("created_by")
+    # display list of user's muffins
     return render_template("my_muffins.html", recipes=recipes)
 
 
