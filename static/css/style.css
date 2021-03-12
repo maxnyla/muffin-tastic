@@ -117,9 +117,9 @@
 }
 
 .my-muffins-bottom-pic {
-    height: 30em;
-    margin-bottom: 5em;
-    margin-top: 3em;
+    height: 28em;
+    margin-bottom: 4em;
+    margin-top: 5em;
 }
 
 .my-account-text {
@@ -204,9 +204,9 @@
     margin-bottom: 2em;
 }
 
-account-container {
-    height: 40em;
-    margin-top: 2em;
+.account-container {
+    height: 35em;
+    margin-top: 3em;
 }
 
 
@@ -245,7 +245,11 @@ account-container {
     padding-bottom: 1em;
 }
 
-
+.my-muffins-bottom-pic {
+    height: 20em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
 
 
 }

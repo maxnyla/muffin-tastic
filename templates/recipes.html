@@ -4,8 +4,7 @@
 <!-- Start of 'About' section -->
 
 <div class="about">
-        <br>
-        <br>
+        
     <div class="row  center-align">
         <div class="col s12 m12 l12">
             <h3 class="about-header"> Welcome to Muffin-Tastic</h3>
@@ -20,17 +19,14 @@
             <p class="about-text center-align"> This is a recipe site exclusively dedicated to muffins, where you can be a part of the action.</p>
                             
             <p class="about-text center-align">You can browse our recipes, find your favourites
-                            or add your own to contribute to this collection of yummy goodness! </strong></p>
-                        
-                <br>
+                            or add your own to contribute to this collection of yummy goodness! </p>
+                
         <h5 class="about-text center-align"><b> So what are you waiting for? Take a look around </b></h5>
-                <br>
+            
     </div>
 </div>
 
-          
-
-    <!-- <div class="container">  -->
+    <!-- start of Carousel   -->
         <div class="carousel carousel-slider" id="muffin-carousel-auto" data-indicators="true">
             <a class="carousel-item" href="#one!"><img src="../static/images/car1.jpg"></a>
             <a class="carousel-item" href="#two!"><img src="../static/images/car2.jpg"></a>
@@ -38,19 +34,16 @@
             <a class="carousel-item" href="#four!"><img src="../static/images/car4.jpg"></a>
             <a class="carousel-item" href="#five!"><img src="../static/images/car5.jpg"></a>
         </div>
-    <!-- </div>  -->
-<!-- </div> -->
+    <!-- ./ end of Carousel  -->
 
 <!--./ end of 'About' section -->
 
-<br>
     <h3 class="center-align fav-muffins">Our favourites</h3>
 
  <div class="col search-muffins-text center-align">
         <h5>You can find a selection of our muffins below or search for your favourites!</h5>
 </div>
 
-<br>
 
 
 <!-- Start of all muffin db search-->
@@ -60,8 +53,6 @@
         <div class="col s12">
             <br>
             <h5 class="search-muffins-intro center-align">
-                 <!-- <strong> Find Muffins:
-                 </strong> -->
             </h5>
         </div>
 
@@ -86,10 +77,8 @@
 <!--./ end of muffin search-->
 
 
-
 <!-- start of featured muffins section -->
 
-   
 
 <div class="row">
     {% for recipe in recipes %}
@@ -124,14 +113,12 @@
                      <br>
                         <div class="row">
                             <div class="col s12">
-                                <!-- <div class="row"> -->
+                               
                                     <div class="col delete-recipe">
                                         {% if session.user|lower == recipe.created_by|lower %}
                                         <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>
-                                    <!-- </div> -->
-                                    <!-- <div class="col edit-recipe"> -->
+                                   
                                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
-                                    <!-- </div> -->
                                         {% endif %}
                                 </div>
                             </div>
