@@ -310,43 +310,40 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 ### Categories ###
     
-    -** Documents included within this collection:**
+-** Documents included within this collection:**
 
-        - Category_name: Sweet
+- Category_name: Sweet
 
-        - Category_name: Savoury
+- Category_name: Savoury
 
 ### Users###
 
-    - **Documents included within this collection:**
+- **Documents included within this collection:**
 
-        - Username
+- Username
 
-        - Password
+- Password
 
 ### Recipes ###
 
-    - **Documents included within this collection:**
+- **Documents included within this collection:**
 
-        - category_name
-        - recipe_name
-        - recipe_description
-        - recipe_ingredients
-        - recipe_instructions
-        - recipe_difficulty
-        - recipe_image
-        - created_by
+- category_name
+- recipe_name
+- recipe_description
+- recipe_ingredients
+- recipe_instructions
+- recipe_difficulty
+- recipe_image
+- created_by
 
 ### Levels ###
 
-    - Documents included within this collection:
+- **Documents included within this collection:**
 
-        recipe_difficulty: easy
-        recipe_difficulty: medium
-        recipe_difficulty: difficult
-
-
-Jinja templating is used throughout the project to go through the data in the code
+- recipe_difficulty: easy
+- recipe_difficulty: medium
+- recipe_difficulty: difficult
 
 
 
