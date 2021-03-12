@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
     <link rel="manifest" href="../static/images/site.webmanifest">
+    <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
+    <!--Materialize CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Link to style.css with jinja template-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
@@ -18,40 +22,47 @@
 </head>
 <body>
 	<header>
-    <!-- top navbar start -->
+    <!-- Materialize top navbar start -->
 		<nav class="nav-extended text-shadow pink lighten-4">
 			<div class="nav-wrapper">
+                <!-- Jinja templating -->
 				<a href="{{ url_for('get_recipes') }}" class="brand-logo"><img class="logo" src="../static/images/logo1.png" alt="logo image"></a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_recipes') }}"><strong>Home</strong></a></li>
+                    <!-- jinja if satement restricting view of these links to only logged in users-->
                     {% if session.user %}
                         <li><a href="{{ url_for('account', username=session['user']) }}"><strong>My Account</strong></a></li>
                         <li><a href="{{ url_for('my_muffins') }}"><strong>My Muffins</strong></a></li>
                         <li><a href="{{ url_for('add_recipe') }}"><strong>Add Recipe</strong></a></li>
                         <li><a href="{{ url_for('logout') }}"><strong>Log Out</strong></a></li>
+                    <!-- jinja else satement restricting view of these links to only logged out users-->
                     {% else %}
                         <li><a href="{{ url_for('login') }}"><strong>Log In</strong></a></li>
                         <li><a href="{{ url_for('register') }}"><strong>Register</strong></a></li>
                     {% endif %}
+                    <!-- end of jinja if satement -->
 				</ul>
 			</div>
         </nav>
     <!-- top navbar end -->
 
-    <!-- mobile sidenav start -->
+    <!-- Materialize mobile sidenav start -->
 		<ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align pink lighten-4"><strong>Muffin-Tastic</strong></h4></li>
             <li><a href="{{ url_for('get_recipes') }}"><strong>Home</strong></a></li>
+            <!-- jinja if satement restricting view of these links to only logged in users-->
             {% if session.user %}
                 <li><a href="{{ url_for('account', username=session['user']) }}"><strong>My Account</strong></a></li>
                 <li><a href="{{ url_for('my_muffins') }}"><strong>My Muffins</strong></a></li>
                 <li><a href="{{ url_for('add_recipe') }}"><strong>Add Recipe</strong></a></li>
                 <li><a href="{{ url_for('logout') }}"><strong>Log Out</strong></a></li>
+            <!-- jinja else satement restricting view of these links to only logged out users-->
             {% else %}
                 <li><a href="{{ url_for('login') }}"><strong>Log In</strong></a></li>
                 <li><a href="{{ url_for('register') }}"><strong>Register</strong></a></li>
             {% endif %}
+            <!-- end of jinja if satement -->
         </ul>
     <!-- mobile sidenav end -->
 	</header>
@@ -70,7 +81,7 @@
     <!-- flash messages end -->
     </section>
   
-    <!-- Main area start-->
+    <!-- Main area with base container-fluid start-->
     <main class="container-fluid">
         {% block content %}
         {% endblock %}
@@ -85,15 +96,18 @@
                     <ul class="my-footer" id="my-footer">
                         <li><h4 class="center-align pink lighten-4"><strong>Muffin-Tastic</strong></h4></li>
                         <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('get_recipes') }}"><strong>Home</strong></a></li>
+                        <!-- jinja if satement restricting view of these links to only logged in users-->
                         {% if session.user %}
                             <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('account', username=session['user']) }}"><strong>Account</strong></a></li>
                             <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('my_muffins') }}"><strong>My muffins</strong></a></li>
                             <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('add_recipe') }}"><strong>Add recipe</strong></a></li>
                             <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('logout') }}"><strong>Log Out</strong></a></li>
+                        <!-- jinja else satement restricting view of these links to only logged out users-->
                         {% else %}
                             <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('login') }}"><strong>Log In</strong></a></li>
                             <li><a class="grey-text text-lighten-4 footer-text" href="{{ url_for('register') }}"><strong>Register</strong></a></li>
                         {% endif %}
+                        <!-- end of jinja if satement -->
                     </ul>
                     </div>
                 </div>
