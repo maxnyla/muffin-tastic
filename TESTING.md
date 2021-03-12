@@ -73,8 +73,6 @@ Links to the results of the last validation completed can be found below:
 
 [CSS file](/static/docs/readme/css_val.png)
 
-[JQuery](/static/docs/readme/)
-
 
 :house:[ Back to Table of Contents](#home)
 
