@@ -308,18 +308,23 @@ For this project I have used a MongoDB database by installing Flask PyMongo and 
 
 The Muffindb consists of 4 Collections and its structure can be found below:
 
-- Categories
-    Documents included within this collection:
+* Categories
+    
+    - Documents included within this collection:
+
         Category_name: Sweet
         Category_name: Savoury
 
-- Users
-    Documents included within this collection:
+* Users
+    - Documents included within this collection:
+
         Username
         Password
 
-- Recipes
-    Documents included within this collection:
+* Recipes
+
+    - Documents included within this collection:
+
         category_name
         recipe_name
         recipe_description
@@ -329,8 +334,10 @@ The Muffindb consists of 4 Collections and its structure can be found below:
         recipe_image
         created_by
 
-- Levels
-    Documents included within this collection:
+* Levels
+
+    - Documents included within this collection:
+    
         recipe_difficulty: easy
         recipe_difficulty: medium
         recipe_difficulty: difficult
