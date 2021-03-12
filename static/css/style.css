@@ -47,6 +47,12 @@
     margin: 4px
 }
 
+.btn-delete-acct {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .recipe-header{
     font-weight: 350;
 }
@@ -235,7 +241,6 @@ account-container {
 }
 
 .btn-delete-acct {
-    margin-top: 2em;
     padding-top: 2em;
     padding-bottom: 1em;
 }

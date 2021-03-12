@@ -68,11 +68,11 @@
                             <div class="col s12">
                                 <h4 class="delete-account-title"><i>This is irreversible: Once it's done, you're gone</i></h4>
                                     <p class="delete-account-text">Are you sure that you want to delete your account?</p>
-                                    <p class="delete-account-text"> There will be no way back and your recipes will be gone forever</p>
+                                    <p class="delete-account-text"> There will be no way back once you click the grey button</p>
                                 <br>
                                 <div class="col s12 delete-account-content">
-                                        <a href="{{ url_for('my_muffins') }}" class="btn-large btn-delete-acct pink pulse lighten-3"><b>No, I don't! Take me back to my stuff</b></a>
-                                        <a href="{{ url_for('delete_account', username=username|lower) }}" class="btn-large btn-delete-acct grey accent-4"><b>Yes, I'm done here, DELETE ME PLEASE</b></a>
+                                        <a href="{{ url_for('my_muffins') }}" class="btn-large btn-delete-acct pink pulse lighten-3"><b>No! Take me back to my stuff</b></a>
+                                        <a href="{{ url_for('delete_account', username=username|lower) }}" class="btn-large btn-delete-acct grey accent-4"><b>Yes, I'm done here, DELETE ME</b></a>
                                 </div>
                             </div>
                         </div>
