@@ -22,10 +22,10 @@ Users are also able to delete their account which will delete the muffins from t
 3. [Wireframes](#wireframes)
 4. [Colour Scheme](#colour)
 5. [User Stories](#userstories)
-6. [Database](#db)
+6. [Database Design](#db)
 7. [Testing](#testing)
 8. [Deployment](#deployment)
-9. [Technologies](#technologies)
+9. [Technologies Used](#technologies)
 10. [Media](#media)
 11. [Acknowledgements and thanks](#acknowledgements)
 
@@ -233,14 +233,6 @@ The colour wheel for my base colour scheme can be found below:
 
 
 
-## 
-
-
-
-**    **
-
-
-
 For the purpose of improving user experience, I have compressed the images using [tinypng.com](https://tinypng.com/) 
 
 As can be seen below, the total reduction in image size on this site has been of % (MB).
@@ -302,15 +294,16 @@ This site is created for users to share muffin recipes, and get inspiration them
 - As a user, I want to see the difficulty level of muffin recipes at first glance without having to open their respective cards.
 
 
-## Database <a name="db"></a>
+## Database Design<a name="db"></a>
 
-For this project I have used a MongoDB database by installing Flask PyMongo and creating a new database called Muffindb.
+A MongoDB database has been used for this project, by installing Flask PyMongo and creating a new database in Mongo called Muffindb.
+The usual deployment was followed with Flask in order to communicate with MongoDb through PyMongo
 
 The Muffindb consists of 4 Collections and its structure can be found below:
 
 ### Categories ###
     
-** Documents included within this collection:**
+**Documents included within this collection:**
 
 - Category_name: Sweet
 
@@ -344,6 +337,7 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 - recipe_difficulty: easy
 - recipe_difficulty: medium
 - recipe_difficulty: difficult
+
 
 
 
@@ -413,7 +407,7 @@ The process that I followed for deployment of this project was based on the Code
 
 
 
-## Technologies <a name="technologies"></a>
+## Technologies Used <a name="technologies"></a>
 
 
 For this project I have used the below technologies:
@@ -440,16 +434,7 @@ For this project I have used the below technologies:
     Used as a framework for their grid system, navbars, forms, etc. I have also on many occasions modified the initial system for styling purposes.
 
 - [FontAwesome](https://fontawesome.com)
-    Used for the cup icon, which I have used on both pages.
-
-- [Cloudflare](https://www.cloudflare.com) 
-    Used for the scripts
-
-- [Code Beautify CSS beautifier](https://codebeautify.org)
-    Used to make my CSS look nicer and tidier
-
-- [Beautify Tools HTML beautifier](http://beautifytools.com/html-beautifier.php)
-    Used to make my HTML tidier 
+    Used for the icons, which I have used on a few occasions.
 
 - [W3C Markup Validation Service](https://validator.w3.org)
     Used to check my HTML code
@@ -494,6 +479,7 @@ For the image used in the header of this Readme file showing the different scree
 
 [Am I Responsive](http://ami.responsivedesign.is/) 
 
+
 The thumbnail icon used on the internet tab header was sourced from the Favicon site. I used the same image that I already had for the logo and uploaded it
 to the Favicon site for the favicon to be automatically generated:
 
@@ -529,6 +515,8 @@ Some of them are:
 appreciated.
 
 And lastly, I could not leave out the Code Institute team: the other students on Slack, the tutor support and all the mentors who are always welcoming and trying to help.
+
+Special mention to my 'May 2020' channel buddies for the constant chat, help and support. You guys are an amazing little group!
 
 
 :house:[ Back to Table of Contents](#home)
