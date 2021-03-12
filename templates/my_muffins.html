@@ -1,10 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-<br>
-<br>
+<!-- start of my muffins section header-->
     <h3 class="my-muffins-title center-align"><i class="fas fa-grin-stars prefix"></i>  My muffins</h3>
-<br>
 
 <div class="my-muffins-header">
     <div class="row">
@@ -13,9 +11,7 @@
                  <strong>  Welcome to your Muffin-Tastic creations, {{ username }} 
                  </strong>
             </h5>
-            
             <br>
-
             <div class="col my-muffins-text">
 
                 <p> On this page you will find all the muffin recipes that you have uploaded to the site, 
@@ -28,26 +24,26 @@
         </div>
     </div>
 </div>
+<!-- end of my muffins section header-->
 
-
+<!-- start of my muffins recipes created by logged in user -->
 <div class="row">
     {% for recipe in recipes %}
         {% if session.user|lower == recipe.created_by|lower %}
-
         <div class="col s12 m6 l4">
             <div class="card large lime lighten-5">
-
+                <!-- start of front of muffin cards -->
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="responsive-img activator" src="{{recipe.recipe_image}}" alt= "{{ recipe.recipe_name }}">
                 </div>
-
                 <div class="card-content">
                     <span class="card-title activator pink-text text-lighten-2 recipe-name">{{ recipe.recipe_name }}<i class="fas fa-angle-double-right right"></i></span>
                         <p class="category">{{ recipe.category_name }}</p>
                         <p class="level">{{ recipe.recipe_difficulty }}</p>
                         <p class="owner"><em>Author: {{ recipe.created_by }}</em></p>
                 </div>
-
+                <!-- end of front of muffin cards -->
+                <!-- start of muffin card inside reveal -->
                 <div class="card-reveal inside-crd">
                     <span class="card-title pink-text text-darken-5 recipe-header">{{ recipe.recipe_name }}<i class="fas fa-times right"></i>
                     </span>
@@ -56,47 +52,44 @@
                         <h5 class= "ingredients"><i class="pink-text fas fa-carrot"></i> Ingredients:</h5>
                             <p class= "ingredients-text">{{ recipe.recipe_ingredients }}</p>
                     <br>
-                    <hr id="divider2">
+                    <hr class="divider2">
                         <h5 class="instructions"><i class="pink-text fas fa-tasks"></i> Instructions:</h5>
                             <p class= "instructions-text">{{ recipe.recipe_instructions }}</p>
                     <br>
-                    <hr id="divider3">
-                     <br>
+                    <hr class="divider3">
+                    <br>
+                    <!-- start of edit and delete muffin  -->
                         <div class="row">
                             <div class="col s12">
-                                <!-- <div class="row"> -->
                                     <div class="col delete-recipe">
                                         {% if session.user|lower == recipe.created_by|lower %}
                                         <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>
-                                    <!-- </div> -->
-                                    <!-- <div class="col edit-recipe"> -->
+                
                                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
-                                    <!-- </div> -->
                                         {% endif %}
                                 </div>
                             </div>
-
                         </div>
-
+                    <!-- end of edit and delete muffin  -->
                 </div>
             </div>
         </div>
-
         {% endif %}
     {% endfor %}
 </div>
+<!-- end of my muffins recipes created by logged in user -->
 
-<!-- ADD RECIPE BUTTON -->
+<!-- ADD RECIPE -->
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large pink pulse lighten-3 text-shadow add-recipe-btn">
+                <div class="btn-large pink pulse lighten-3 text-shadow add-recipe-btn">
                     <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD</strong></a>
-                </button>
+                </div>
             </div>
-<!-- /END OF ADD RECIPE BUTTON-->
+<!-- /END OF ADD RECIPE-->
 
+<!-- start of image  -->
 <div class="parallax-container container-fluid my-muffins-bottom-pic">
-    <div class="parallax"><img class="responsive-img" src="../static/images/pic6.jpg"></div>
+    <div class="parallax"><img class="responsive-img" src="../static/images/pic6.jpg" alt="image of colourful muffins"></div>
 </div>
-
-
+<!-- end of image  -->
 {% endblock %}

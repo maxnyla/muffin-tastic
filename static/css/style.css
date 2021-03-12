@@ -111,7 +111,7 @@
 .my-muffins-bottom-pic {
     height: 28em;
     margin-bottom: 4em;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .my-account-text {
@@ -151,6 +151,12 @@
 .add-recipe-form {
     background-color: #ee7aa20f;
 }
+
+.add-recipe-btn {
+    margin-bottom: 3em;
+    margin-top:2em;
+}
+
 
 .about-header {
     color: #ee7aa2;
@@ -242,6 +248,12 @@
     margin-bottom: 3em;
     margin-top: 3em;
 }
+
+.add-recipe-btn {
+    margin-bottom: 3em;
+    padding-top: 2em;
+}
+
 
 
 }
