@@ -144,8 +144,18 @@
 }
 
 .add-muffin-title {
-    color: #595a53;
+    margin-bottom: 1.5em;
     margin-top: 1.5em;
+}
+
+.edit-muffin-title {
+    color: #595a53;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+.edit-recipe-form {
+    margin-bottom: 6em;
 }
 
 .my-account-title {

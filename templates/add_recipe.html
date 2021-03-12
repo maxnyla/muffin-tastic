@@ -46,6 +46,7 @@
                     <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected>Please choose</option>
+                            <!-- Jinja templating to show both options -->
                             {% for category in categories %}
                             <option value="{{category.category_name}}">{{category.category_name}}</option>
                             {% endfor %}
@@ -59,6 +60,7 @@
                     <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
                         <select id="recipe_difficulty" name="recipe_difficulty" class="validate" required>
                                 <option value="" disabled selected>Please choose</option>
+                                <!-- Jinja templating to show both options -->
                                 {% for level in levels %}
                                 <option value="{{level.recipe_difficulty}}">{{level.recipe_difficulty}}</option>
                                 {% endfor %}

@@ -1,13 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<br>
-<br>
-<h3 class="pink-text text-darken-4 center-align">Edit your muffin recipe</h3>
-<br>
-<br>
+<h3 class="pink-text edit-muffin-title text-darken-4 center-align">Edit your muffin recipe</h3>
 
-    <div class="row card-panel grey lighten-5">
+    <div class="row card-panel edit-recipe-form grey lighten-5">
         <!-- EDIT RECIPE FORM START -->
         <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
             <!-- EDIT RECIPE NAME -->
@@ -42,6 +38,7 @@
                     <i class="fas fa-utensils prefix pink-text text-lighten-3"></i>
                         <select id="category_name" name="category_name" class="validate" required>
                             <option value="" disabled selected></option>
+                            <!-- Jinja templating to show both options with current selection -->
                             {% for category in categories %}
                                 {% if category.category_name == recipe.category_name %}
                                     <option value="{{ category.category_name }}" selected >{{ category.category_name }}</option>
@@ -60,6 +57,7 @@
                     <i class="fas fa-grimace prefix pink-text text-lighten-3"></i>
                         <select id="recipe_difficulty" name="recipe_difficulty" class="validate" required>
                                 <option value="" disabled selected></option>
+                                 <!-- Jinja templating to show both options with current selection -->
                                 {% for level in levels %}
                                     {% if level.recipe_difficulty == level.recipe_difficulty %}
                                         <option value="{{ level.recipe_difficulty }}" selected >{{ level.recipe_difficulty }}</option>
@@ -96,11 +94,5 @@
 
         <!-- EDIT RECIPE FORM END -->
     </div>
-        
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    
 {% endblock %}
