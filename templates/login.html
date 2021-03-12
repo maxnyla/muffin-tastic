@@ -1,20 +1,14 @@
 {% extends "base_login.html" %}
 {% block content %}
 
-   
-
 <section class="container-fluid reg-page" >
     <div class="row center-align reg-main">
-
         <div class="reg-wrapper">
             <div class="row center-align">
-                
                 <div class="col s12">
                     <h3 class="center-align login-title">Log In </h3>
                 </div>
-
-
-                <!-- <div class="row"> -->
+                <!-- start of login form -->
                     <form class="col s12" method="POST" action="{{ url_for('login') }}">
                             <div class="card-panel">
                                 <!-- username -->
@@ -26,7 +20,6 @@
                                         <label for="username">Username: 5-15 characters</label>
                                     </div>
                                 </div>
-
                                 <!-- password -->
                                 <div class="row">
                                     <div class="input-field col s12">
@@ -36,7 +29,6 @@
                                         <label for="password">Password: 5-15 characters</label>
                                     </div>
                                 </div>
-
                                 <!-- log in -->
                                 <div class="row">
                                     <button type="submit" class="col s12 btn-large pink lighten-3 text-shadow">
@@ -45,7 +37,8 @@
                                 </div>
                             </div>
                     </form>
-        
+                    <!-- end of login form -->
+                    <!-- start of redirection to register page -->
                     <div class="row">
                         <div class="col s12">
                             <p class="center-align">
@@ -54,10 +47,10 @@
                             </p>
                         </div>
                     </div>
+                <!-- end of redirection to register page -->
             </div>
         </div>
     </div>
 </section>
-
 
 {% endblock %}
