@@ -17,8 +17,7 @@
         </div>
     </div>
     <!-- Header area end -->
-        <br>
-
+    <br>
     <!-- first card start -->
     <div class="section">
         <div class="row card-panel pink lighten-5">
@@ -72,6 +71,7 @@
                                     <p class="delete-account-text"> There will be no way back once you click the grey button</p>
                                 <br>
                                 <div class="col s12 delete-account-content">
+                                        <!-- Jinja templating for url redirection -->
                                         <a href="{{ url_for('my_muffins') }}" class="btn-large btn-delete-acct pink pulse lighten-3"><b>No! Take me back to my stuff</b></a>
                                         <a href="{{ url_for('delete_account', username=username|lower) }}" class="btn-large btn-delete-acct grey accent-4"><b>Yes, I'm done here, DELETE ME</b></a>
                                     </div>
