@@ -1,21 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<br>
-<br>
-<h3 class="add-muffin-title center-align">Add your own muffin recipes</h3>
-<br>
+    <h3 class="add-muffin-title center-align">Add your own muffin recipes</h3>
 
     <section class="add-muffin-header">
         <div class="row center-align">
             <div class="col s12 ">
-                <a href="" class="add-muffin-pic"><img class="responsive-img" src="../static/images/pic3.png"></a>
+                <a href="" class="add-muffin-pic"><img class="responsive-img" src="../static/images/pic3.png" alt="image of colourful muffins"></a>
             </div>
         </div>
     </section>
 
+    <!-- ADD RECIPE FORM START -->
     <div class="row card-panel add-recipe-form">
-        <!-- ADD RECIPE FORM START -->
         <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
             <!-- ADD RECIPE NAME -->
             <div class="row">
@@ -31,7 +28,7 @@
                     <i class="fas fa-carrot prefix pink-text text-lighten-3"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="600"
                             type="text" class="materialize-textarea validate" data-length="600" required></textarea>
-                    <label for="recipe_ingredients">Ingredients(separate with comma or / )</label>
+                    <label for="recipe_ingredients">Ingredients (separate with comma or / )</label>
                 </div>
             </div>
             <!-- ADD RECIPE INSTRUCTIONS -->
@@ -56,7 +53,6 @@
                     <label for="category_name">Category</label>
                 </div>
             </div>
-
             <!-- ADD DIFFICULTY LEVEL -->
             <div class="row">
                 <div class="input-field col s12">
@@ -86,15 +82,17 @@
             <br>
             <br>
         </form>
-        <!-- ADD RECIPE FORM END -->
     </div>
-        
+    <!-- ADD RECIPE FORM END -->
+    
+    <!-- Feature image start -->
     <section class="add-muffin-footer">
         <div class="row center-align">
             <div class="col s12 ">
-                <a href="" class="add-muffin-pic"><img class="responsive-img" src="../static/images/pic4.png"></a>
+                <a href="" class="add-muffin-pic"><img class="responsive-img" src="../static/images/pic4.png" alt="image of muffin"></a>
             </div>
         </div>
     </section>
+    <!-- Feature image end -->
 
 {% endblock %}
