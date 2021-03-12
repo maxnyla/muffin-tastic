@@ -59,6 +59,8 @@
           <!-- DELETE ACCOUNT start -->
 
         <div class="row card-panel grey lighten-3">
+                <!--if user is logged in they are able to edit or delete their profile from the DB-->
+
             <div class="col s12 center-align account-delete-text">
                     <h4 class="my-account-text"> <i class="fas fa-trash "></i> Would you like to delete your account? </h4>
                     
@@ -73,7 +75,7 @@
                                 <div class="col s12 delete-account-content">
                                         <a href="{{ url_for('my_muffins') }}" class="btn-large btn-delete-acct pink pulse lighten-3"><b>No! Take me back to my stuff</b></a>
                                         <a href="{{ url_for('delete_account', username=username|lower) }}" class="btn-large btn-delete-acct grey accent-4"><b>Yes, I'm done here, DELETE ME</b></a>
-                                </div>
+                                    </div>
                             </div>
                         </div>
 
@@ -81,6 +83,7 @@
 
                 <!-- /DELETE ACCOUNT end -->
             </div>
+            
         </div>    
 
     </div>

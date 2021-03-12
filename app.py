@@ -197,7 +197,10 @@ def logout():
 
 @app.route("/delete_account/<username>")
 def delete_account(username):
-    # delete the account from the site
+    # get session user's username from the db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    # if username in session is same delete the account
     mongo.db.users.remove({"username": username.lower()})
     flash("Your account has been deleted")
     session.pop("user")
