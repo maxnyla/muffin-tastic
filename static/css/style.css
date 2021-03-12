@@ -154,6 +154,10 @@
 
 .add-recipe-btn {
     margin-bottom: 3em;
+}
+
+.add-my-recipe-btn {
+    margin-bottom: 3em;
     margin-top:2em;
 }
 
@@ -254,6 +258,10 @@
     padding-top: 2em;
 }
 
+.add-my-recipe-btn {
+    margin-bottom: 3em;
+    margin-top:2em;
+}
 
 
 }
