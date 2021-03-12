@@ -50,7 +50,13 @@ Below is a screenshot of the results achieved for each page. Page speed score wa
 
 ## Code validation <a name="codeval"></a>
 
-I ran all my code through the  [W3C Markup Validation Service](https://validator.w3.org), the [CSS Validation Service](https://jigsaw.w3.org/css-validator) and the [PEP8 Validation] (http://pep8online.com/).
+I ran all my code through the various relevant validators:
+
+The [W3C Markup Validation Service](https://validator.w3.org) for my HTML code, 
+
+the [CSS Validation Service](https://jigsaw.w3.org/css-validator) for the CSS code 
+
+and the [PEP8 Validation](http://pep8online.com/) for the Python code.
 
 The CSS validator resulted in three errors: one invalid font-weight value which was 350 and I changed to 300 as a result of the validator, and two
 incorrect font styling options for the muffin card names that I had set to incorrectly use emphasize. Since these were not being applied as they were incorrect, I simply removed them from my code
@@ -59,7 +65,7 @@ and the validation was then successful.
 The PEP8 code validator gave me a few indentation errors and lines that were too long so I fixed all these before saving the files again and the code passed 
 this time, after the changes.
 
-I have also used the Chrome Developer Tools extensively throughout the project. They have been very useful for each change that I made, and to double-check my ideas before implementing them. 
+
 
 
 Links to the results of the last validation completed can be found below:
@@ -86,6 +92,9 @@ Links to the results of the last validation completed can be found below:
 [HTML](/static/docs/readme/validation/recipes_val.png)
 
 [HTML](/static/docs/readme/validation/register_val.png)
+
+I have also used the Chrome Developer Tools extensively throughout the project. 
+They have been very useful for each change that I made, and to double-check my ideas before implementing them. 
 
 
 :house:[ Back to Table of Contents](#home)

@@ -253,20 +253,54 @@ As can be seen below, the total reduction in image size on this site has been of
 
 ## User Stories <a name="userstories"></a>
 
-The different goals and aims of the site, when viewed from a user perspective or the site owner's perspective are below.
-
-
-
-
-**Users:**
-
-
-
+The different goals and aims of the site, when viewed from a user perspective, the developer's perspective or the site owner's perspective are below.
 
 
 **Site owner:**
 
+- As the site owner, I want users to have a positive experience so that the site attracts more people. 
 
+- As the site owner, I want to provide some form of escapism and entertainment to users.
+
+- As the site owner, I want users to explore their creativity and get into baking.
+
+- As the site owner, I want to have a site that I can also use, adding content or even finding new ideas. 
+
+
+**Developer:**
+
+ - As the developer, I want to create a website so musicians can share their music with other musicians. 
+
+ - As the developer, I want the website to be aesthetically pleasing to those who visit the website making good use of HTML, CSS and Bootstrap. 
+
+ - As the developer, I want to website to function in the intended ways using Javascript/JQuery and Python.
+
+ - As the developer, I want everything shared to be stored in a back end data network, in this case I will be using MongoDB 
+
+
+**Users:**
+
+This site is created for users to share muffin recipes, and get inspiration themselves.
+
+- As a user, I want to be able to register for free and create an account.
+
+- As a user, I want to be able to delete my account if I wish to.
+
+- As a user, I want to be able to search for muffin recipes using a name or ingredient.
+
+- As a user, I want to be able to create my own recipes for other users to see.
+
+- As a user, I want to be able to edit all the recipes that I have uploaded, or delete them.
+
+- As a user, I want to have a profile page where I can see all my recipes grouped together easily and edit them. 
+
+- As a user, I want to be able to log out of the site and still have access to the main page with the recipe search.
+
+- As a user, I want to see who created each recipe.
+
+- As a user, I want to see the type of category of muffins at first glance without having to open their cards.
+
+- As a user, I want to see the difficulty level of muffin recipes at first glance without having to open their respective cards.
 
 
 :house:[ Back to Table of Contents](#home)
