@@ -320,7 +320,7 @@ These were used as the main colours:
 
 The colour wheel for my base colour scheme can be found below:
 
-![image of main colours](/static/docs/readme/logout.png)
+![image of main colours](/static/docs/readme/colorwheel.png)
 
 
 :house:[ Back to Table of Contents](#home)
