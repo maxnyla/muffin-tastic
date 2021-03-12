@@ -238,8 +238,11 @@ For the purpose of improving user experience, I have compressed the images using
 As can be seen below, the total reduction in image size on this site has been of % (MB).
 
 
-![tinypng image size saving results](assets/img/compression_result.png)
+![tinypng image size saving results](/static/docs/readme/tiny.png)
 
+
+It's worth noting that in addition to this resource, I have also manually resized many of the screenshots that were taken from the pages because they required extra cropping due to excess 
+white space, so this does not reflect the total saving when it comes to space.
 
 
 ## User Stories <a name="userstories"></a>
@@ -339,6 +342,8 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 - recipe_difficulty: difficult
 
 
+:house:[ Back to Table of Contents](#home)
+
 
 
 **Testing/Building the site**
@@ -346,7 +351,6 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 The full testing process for this project can be found [here](TESTING.md).
 
 
-:house:[ Back to Table of Contents](#home)
 
 ## Deployment <a name="deployment"></a>
 
@@ -442,7 +446,7 @@ For this project I have used the below technologies:
 - [CSS Validation Service](https://jigsaw.w3.org/css-validator)
     Used to check my CSS code
 
-- [PEP8 Validation] (http://pep8online.com/)
+- [PEP8 Validation](http://pep8online.com/)
     This was used to validate my Python code, the app.py file
 
 I have also used the Chrome Developer Tools extensively throughout the project. They have been very useful for each change that I made, and to double-check my ideas before implementing them. 
@@ -518,5 +522,6 @@ And lastly, I could not leave out the Code Institute team: the other students on
 
 Special mention to my 'May 2020' channel buddies for the constant chat, help and support. You guys are an amazing little group!
 
+Many thanks as well to the assessors who will spend many long hours reading through all these files. 
 
 :house:[ Back to Table of Contents](#home)
