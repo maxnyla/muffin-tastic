@@ -14,15 +14,12 @@
 
 .reg-title  {
     color: #689f38;
-    /*color: #728833;*/
-    /* color: #db4c7c; */
 }
 
 .reg-page {
     background: url("../images/pic5.jpg") no-repeat center center fixed;
 	background-size: cover;
 	display: flex; 
-	/* justify-content: center; */
     min-height: 100vh;
 }
 
@@ -61,75 +58,55 @@
 
 .category {
     color: #252324;
-    /* color: #615c5f; */
-    /* color: #929718; */
 }
 
 .level {
     color: #252324;
-    /* color: #615c5f; */
 }
 
 .owner {
     color: #f33e7c;
-    /* color: #958120; */
-    /* color:#b9b625; */
 }
 
 .inside-crd {
     background-color: #ffecf6;
-	/* background-color: #f7fbf2; */
-	/* background-color: #fef5f8
-	background-color: #ffc7de */
 }
 
 .ingredients {
     color: #595c1b;
-    /* color: #737720; */
 }
 
 .instructions {
     color: #595c1b;
-    /* color: #737720; */
 }
 
 .ingredients-text {
     color: #595c1b;
-     /* color: #737720; */
 }
 
 .instructions-text {
     color: #595c1b;
-    /* color: #737720; */
 }
 
 
 .my-muffins-intro {
      color: #ee7aa2;
-    /* color: #db4c7c; */
 }
 
 .my-muffins-title {
     color: #595a53;
-    /* color: #737720; */
-    /* color: #929718; */
-    /* color:  #f8bbd0; */
 }
 
 .fav-muffins {
     color: #ee7aa2;
-    /* color: #929718; */
 }
 
 .search-muffins-intro {
     color: #8f9595;
-    /* color: #929718; */
 }
 
 .my-muffins-text {
     color: #595a53;
-    /* color: #737720; */
-    /* color: #929718; */
     font-size: 1.2em;
 }
 
@@ -141,16 +118,12 @@
 
 .my-account-text {
     color: #595a53;
-    /* color: #737720; */
-    /* color: #929718; */
     font-size: 1.5em;
 }
 
 .search-muffins-text { 
     color: #80817a;
     margin-bottom: 2em;
-    /* color: #737720; */
-    /* color: #929718; */
 }
 
 .search-icon {
@@ -163,36 +136,19 @@
 
 .reset-btn {
     background-color: #595a53;;
-    /* background-color: #929718; */
-    /* background-color: #929718e0;  */
 }
 
 .add-muffin-title {
     color: #595a53;
-    /* color: #8f9595;
-    color: #959689;  */
-    /* color: #929718; */
 }
 
 .my-account-title {
     color: #737720;
-    /* color: #929718; */
-    /* color: #8f9595; */
 }
 
 .my-account-intro {
     color: #ec407a;
-    /* color: #ee7aa2; */
-    /* color: #8f9595; */
-    /* color: #929718; */
 }
-
-/* .btn-floating,
-.add-recipe-btn {
-    height: 120px;
-    width: 180px;
-    padding: 0;
-} */
 
 .add-recipe-form {
     background-color: #ee7aa20f;
@@ -204,16 +160,12 @@
 
 .about-title {
     color: #595a53;
-    /* color: #737720; */
-    /* color: #929718; */
     font-size: large;
 }
 
 .about-text {
     color: #595a53;
-    /* color: #737720; */
     font-size: 1.3em;
-    /* color: #929718; */
 }
 
 .about-sect {
@@ -231,25 +183,15 @@
     width:  6em;
 }
 
-/* .account-left-pic {
-    height: auto;
-    width: 30em;
-} */
 
 .account-left-text {
     margin-top: 7em;
 }
 
 .account-right-text {
-    /* margin-left: 1em; */
     margin-top: 7em;
 }
 
-/* 
-.account-right-pic {
-    height: auto;
-    width: 30em;
-} */
 
 .add-muffin-footer {
     margin-top: 3em;
@@ -263,24 +205,14 @@ account-container {
 
 
 
-
-
 @media screen and  (min-width: 1px) and (max-width: 800px) {
 
-/* .my-muffins-title {
-    font-size: 1.5em;
-} */
-
-/* h4 {
-    font-size: 1.3em;
-} */
 
 .btn-large {
     height: 50px;
     line-height: 15px;
     font-size: 9px;
     padding: 0 10px;
-    /* padding: 0; */
 }
 
 .my-account-text  {
@@ -297,15 +229,17 @@ account-container {
     margin-top: 0;
 }
 
-.about-sect {
-    /* padding-bottom: 2em;
-    padding-top: 2em; */
-}
-
-account-container {
-    height: 25em;
+.account-container {
+    height: 20em;
     margin-top: 0;
 }
+
+.btn-delete-acct {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
 
 
 
