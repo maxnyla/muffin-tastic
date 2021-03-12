@@ -22,11 +22,12 @@ Users are also able to delete their account which will delete the muffins from t
 3. [Wireframes](#wireframes)
 4. [Colour Scheme](#colour)
 5. [User Stories](#userstories)
-6. [Testing](#testing)
-7. [Deployment](#deployment)
-8. [Technologies](#technologies)
-9. [Media](#media)
-10. [Acknowledgements and thanks](#acknowledgements)
+6. [Database](#db)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Technologies](#technologies)
+10. [Media](#media)
+11. [Acknowledgements and thanks](#acknowledgements)
 
 
 ## Introduction <a name="introduction"></a>
@@ -184,7 +185,6 @@ There is also an option to delete the account completely, to remove it from the 
 
 
 
-
 **My Muffins page**
 
 
@@ -193,15 +193,11 @@ There is also an option to delete the account completely, to remove it from the 
 
 
 
-
-
-
 ## Wireframes <a name="wireframes"></a>
 
 All the wireframes were created with [Microsoft Paint](https://jspaint.app/).
 
-I created two wireframes for each page: one home page for the mobile view and another for the desktop view, and the same for the game page. 
-
+I created two wireframes for each page: one home page for the mobile view and another for the desktop view.
 
 
 The wireframes can be found here:
@@ -211,7 +207,6 @@ The wireframes can be found here:
 [Home page wireframe web](https://github.com/maxnyla/muffin-tastic/tree/master/assets/static/docs/wireframes/1-home_web.png)
 
 [Home page wireframe mobile](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/2-home_mob.png)
-
 
 
 
@@ -238,22 +233,11 @@ The colour wheel for my base colour scheme can be found below:
 
 
 
-
-
 ## 
 
 
 
-
-
-
-
-
 **    **
-
-
-
-
 
 
 
@@ -284,13 +268,13 @@ The different goals and aims of the site, when viewed from a user perspective, t
 
 **Developer:**
 
- - As the developer, I want to create a website so musicians can share their music with other musicians. 
+- As the developer, I want to create a website so musicians can share their music with other musicians. 
 
- - As the developer, I want the website to be aesthetically pleasing to those who visit the website making good use of HTML, CSS and Bootstrap. 
+- As the developer, I want the website to be aesthetically pleasing to those who visit the website making good use of HTML, CSS and Bootstrap. 
 
- - As the developer, I want to website to function in the intended ways using Javascript/JQuery and Python.
+- As the developer, I want to website to function in the intended ways using Javascript/JQuery and Python.
 
- - As the developer, I want everything shared to be stored in a back end data network, in this case I will be using MongoDB 
+- As the developer, I want everything shared to be stored in a back end data network, in this case I will be using MongoDB 
 
 
 **Users:**
@@ -316,6 +300,43 @@ This site is created for users to share muffin recipes, and get inspiration them
 - As a user, I want to see the type of category of muffins at first glance without having to open their cards.
 
 - As a user, I want to see the difficulty level of muffin recipes at first glance without having to open their respective cards.
+
+
+## Database <a name="db"></a>
+
+For this project I have used a MongoDB database by installing Flask PyMongo and creating a new database called Muffindb.
+
+The Muffindb consists of 4 Collections and its structure can be found below:
+
+- Categories
+    Documents included within this collection:
+        Category_name: Sweet
+        Category_name: Savoury
+
+- Users
+    Documents included within this collection:
+        Username
+        Password
+
+- Recipes
+    Documents included within this collection:
+        category_name
+        recipe_name
+        recipe_description
+        recipe_ingredients
+        recipe_instructions
+        recipe_difficulty
+        recipe_image
+        created_by
+
+- Levels
+    Documents included within this collection:
+        recipe_difficulty: easy
+        recipe_difficulty: medium
+        recipe_difficulty: difficult
+
+
+Jinja templating is used throughout the project to go through the data in the code
 
 
 
