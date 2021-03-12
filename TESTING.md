@@ -47,6 +47,24 @@ Below is a screenshot of the results achieved for each page. Page speed score wa
 
 ## Browser Compatibility <a name="browsercomp"></a>
 
+This site has been tested through all the browsers that I have access to:
+
+- Google Chrome
+
+- Mozilla Firefox
+
+- Microsoft Edge
+
+- Opera
+
+- Mobile chrome via Android phone and tablet
+
+- Mobile Samsung browser via Android phone and tablet
+
+
+It has appeared to behave correctly on all these platforms and no issues were observed.
+
+
 
 ## Code validation <a name="codeval"></a>
 
@@ -67,19 +85,20 @@ this time, after the changes.
 
 
 
-
 Links to the results of the last validation completed can be found below:
 
 
+[Python code for app.py file](/static/docs/readme/validation)
+
 [Python code for app.py file](/static/docs/readme/validation/pep8_val.png)
 
-[HTML](/static/docs/readme/validation/base_val.png)
+![HTML](/static/docs/readme/validation/base_val.png)
 
-[HTML](/static/docs/readme/validation/base_login_val.png)
+![HTML](/static/docs/readme/validation/base_login_val.png)
 
-[HTML](/static/docs/readme/validation/account_val.png)
+![HTML](/static/docs/readme/validation/account_val.png)
 
-[HTML](/static/docs/readme/validation/add_recipe_val.png)
+![HTML](/static/docs/readme/validation/add_recipe_val.png)
 
 [HTML](/static/docs/readme/validation/edit_recipe_val.png)
 

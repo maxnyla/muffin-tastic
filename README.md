@@ -235,7 +235,7 @@ The colour wheel for my base colour scheme can be found below:
 
 For the purpose of improving user experience, I have compressed the images using [tinypng.com](https://tinypng.com/) 
 
-As can be seen below, the total reduction in image size on this site has been of % (MB).
+As can be seen below, the total reduction in image size on this site has been of 72% (8MB).
 
 
 ![tinypng image size saving results](/static/docs/readme/tiny.png)
@@ -297,6 +297,10 @@ This site is created for users to share muffin recipes, and get inspiration them
 - As a user, I want to see the difficulty level of muffin recipes at first glance without having to open their respective cards.
 
 
+:house:[ Back to Table of Contents](#home)
+
+
+
 ## Database Design<a name="db"></a>
 
 A MongoDB database has been used for this project, by installing Flask PyMongo and creating a new database in Mongo called Muffindb.
@@ -342,8 +346,6 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 - recipe_difficulty: difficult
 
 
-:house:[ Back to Table of Contents](#home)
-
 
 
 **Testing/Building the site**
@@ -354,7 +356,6 @@ The full testing process for this project can be found [here](TESTING.md).
 
 ## Deployment <a name="deployment"></a>
 
-**Deployment**
 
 This website has been deployed to Heroku as [Muffin-Tastic](https://muffin-tastic.herokuapp.com/).
 
@@ -377,7 +378,7 @@ The process that I followed for deployment of this project was based on the Code
 
 - Commited and pushed the requirements.txt and Procfile to GitHub.
 
-- Logged in to Heroku (www.herku.com) and selected "Create New App".
+- Logged in to Heroku (www.heroku.com) and selected "Create New App".
 
 - Selected the input field "App Name" and gave the app a unique name using dashes instead of spaces.
 
