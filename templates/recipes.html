@@ -4,37 +4,31 @@
 <!-- Start of 'About' section -->
 
 <div class="about">
-        
     <div class="row  center-align">
         <div class="col s12 m12 l12">
             <h3 class="about-header"> Welcome to Muffin-Tastic</h3>
         </div>
     </div>
-
 </div>
 
 <div class="row center-align about-sect">
     <div class="col s12">
-        <!-- <h5 class="about-title center-align"> <b> </b></h5> -->
-            <p class="about-text center-align"> This is a recipe site exclusively dedicated to muffins, where you can be a part of the action.</p>
-                            
+            <p class="about-text center-align"> This is a recipe site exclusively dedicated to muffins, where you can be a part of the action.</p>                 
             <p class="about-text center-align">You can browse our recipes, find your favourites
                             or add your own to contribute to this collection of yummy goodness! </p>
-                
         <h5 class="about-text center-align"><b> So what are you waiting for? Take a look around </b></h5>
-            
     </div>
 </div>
 
-    <!-- start of Carousel   -->
-        <div class="carousel carousel-slider" id="muffin-carousel-auto" data-indicators="true">
-            <a class="carousel-item" href="#one!"><img src="../static/images/car1.jpg" alt="image of assorted muffins"></a>
-            <a class="carousel-item" href="#two!"><img src="../static/images/car2.jpg" alt="image of assorted muffins"></a>
-            <a class="carousel-item" href="#three!"><img src="../static/images/car3.jpg" alt="image of assorted muffins"></a>
-            <a class="carousel-item" href="#four!"><img src="../static/images/car4.jpg" alt="image of assorted muffins"></a>
-            <a class="carousel-item" href="#five!"><img src="../static/images/car5.jpg" alt="image of assorted muffins"></a>
-        </div>
-    <!-- ./ end of Carousel  -->
+<!-- start of Carousel   -->
+    <div class="carousel carousel-slider" id="muffin-carousel-auto" data-indicators="true">
+        <a class="carousel-item" href="#one!"><img src="../static/images/car1.jpg" alt="image of assorted muffins"></a>
+        <a class="carousel-item" href="#two!"><img src="../static/images/car2.jpg" alt="image of assorted muffins"></a>
+        <a class="carousel-item" href="#three!"><img src="../static/images/car3.jpg" alt="image of assorted muffins"></a>
+        <a class="carousel-item" href="#four!"><img src="../static/images/car4.jpg" alt="image of assorted muffins"></a>
+        <a class="carousel-item" href="#five!"><img src="../static/images/car5.jpg" alt="image of assorted muffins"></a>
+    </div>
+<!-- ./ end of Carousel  -->
 
 <!--./ end of 'About' section -->
 
@@ -44,17 +38,13 @@
         <h5>You can find a selection of our muffins below or search for your favourites!</h5>
 </div>
 
-
 <!-- Start of all muffin db search-->
 
 <div class="search-muffins-header">
     <div class="row center-align">
         <div class="col s12">
             <br>
-            <!-- <h5 class="search-muffins-intro center-align">
-            </h5> -->
         </div>
-
         <div class="row card-panel grey lighten-5">
             <form action="{{ url_for('search') }}" method="post" class="col s12">
                 <div class="row valign-wrapper center-align">
@@ -63,7 +53,6 @@
                         <input type="text" name="query" id="query" minlength="3" class="validate" required>
                         <label for="query">Name/ingredient</label>
                     </div>
-
                     <div class="col s12">
                         <button type="submit" class="search-btn btn text-shadow"> FIND</button>
                         <a href="{{ url_for('get_recipes') }}" class="reset-btn btn text-shadow">  X  </a>
@@ -110,10 +99,9 @@
                     <!-- start of edit and delete muffin  -->
                         <div class="row">
                             <div class="col s12">
-                                    <div class="col delete-recipe">
+                                    <div class="col s12 delete-recipe">
                                         {% if session.user|lower == recipe.created_by|lower %}
-                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>
-                                   
+                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>                               
                                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
                                         {% endif %}
                                 </div>
@@ -133,8 +121,10 @@
         <!-- ADD RECIPE start -->
             <div class="col s12 center-align">
                 <div class="btn-large pulse pink lighten-3 text-shadow add-recipe-btn">
+                    <!-- if user is logged in, direct to add recipe page  -->
                     {% if session.user %}   
                     <a href="{{ url_for('add_recipe') }}" class="add-recipe-btn white-text"><strong>ADD MUFFIN</strong></a>
+                    <!-- if user is not logged in, direct to login page  -->
                     {% else %}
                     <a href="{{ url_for('login') }}" class="add-recipe-btn white-text"><strong>ADD MUFFIN</strong></a>
                     {% endif %}

@@ -13,13 +13,11 @@
             </h5>
             <br>
             <div class="col my-muffins-text">
-
                 <p> On this page you will find all the muffin recipes that you have uploaded to the site, 
                     so that you can easily access all your contributions.  You can also edit* or delete any of them if you wish. </p>
                 <p> Of course, feel free to add many more yummy recipes for others to try out! Because, 
                     as we like to say here...There can never be too many muffins in the world! </p>
                 <p><i> * In order to edit or delete a recipe, just access the card by clicking it as usual </i></p>
-
             </div>
         </div>
     </div>
@@ -58,13 +56,12 @@
                     <br>
                     <hr class="divider3">
                     <br>
-                    <!-- start of edit and delete muffin  -->
+                    <!-- start of edit and delete muffins created by user  -->
                         <div class="row">
                             <div class="col s12">
-                                    <div class="col delete-recipe">
+                                    <div class="col s12 delete-recipe">
                                         {% if session.user|lower == recipe.created_by|lower %}
-                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>
-                
+                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small btn-edit pink darken-2 text-shadow">DELETE</a>            
                                         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small btn-delete cyan accent-4 text-shadow"><strong>EDIT</strong></a>
                                         {% endif %}
                                 </div>

@@ -93,6 +93,7 @@
 
 .my-muffins-title {
     color: #595a53;
+    margin-top: 1em;
 }
 
 .fav-muffins {
@@ -122,7 +123,13 @@
 .search-muffins-text { 
     color: #80817a;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
+
+.search-muffins-header {
+    margin-top: 2em;
+}
+
 
 .search-icon {
     color: #ee7aa2; 
@@ -164,6 +171,8 @@
 
 .about-header {
     color: #ee7aa2;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
 }
 
 .about-title {
