@@ -310,15 +310,15 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 ### Categories ###
     
--** Documents included within this collection:**
+** Documents included within this collection:**
 
 - Category_name: Sweet
 
 - Category_name: Savoury
 
-### Users###
+### Users ###
 
-- **Documents included within this collection:**
+**Documents included within this collection:**
 
 - Username
 
@@ -326,7 +326,7 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 ### Recipes ###
 
-- **Documents included within this collection:**
+**Documents included within this collection:**
 
 - category_name
 - recipe_name
@@ -339,7 +339,7 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 ### Levels ###
 
-- **Documents included within this collection:**
+**Documents included within this collection:**
 
 - recipe_difficulty: easy
 - recipe_difficulty: medium
