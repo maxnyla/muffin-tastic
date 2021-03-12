@@ -65,13 +65,27 @@ I have also used the Chrome Developer Tools extensively throughout the project. 
 Links to the results of the last validation completed can be found below:
 
 
-[Python code for app.py file](/static/docs/readme/pep8_val.png)
+[Python code for app.py file](/static/docs/readme/validation/pep8_val.png)
 
-[Home page HTML](/static/docs/readme/)
+[HTML](/static/docs/readme/validation/base_val.png)
 
-[Game page HTML](/static/docs/readme/)
+[HTML](/static/docs/readme/validation/base_login_val.png)
 
-[CSS file](/static/docs/readme/css_val.png)
+[HTML](/static/docs/readme/validation/account_val.png)
+
+[HTML](/static/docs/readme/validation/add_recipe_val.png)
+
+[HTML](/static/docs/readme/validation/edit_recipe_val.png)
+
+[HTML](/static/docs/readme/validation/errorpage_val.png)
+
+[HTML](/static/docs/readme/validation/login_val.png)
+
+[HTML](/static/docs/readme/validation/my_muffins_val.png)
+
+[HTML](/static/docs/readme/validation/recipes_val.png)
+
+[HTML](/static/docs/readme/validation/register_val.png)
 
 
 :house:[ Back to Table of Contents](#home)
