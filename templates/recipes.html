@@ -15,7 +15,7 @@
 
 <div class="row center-align about-sect">
     <div class="col s12">
-        <h5 class="about-title center-align"> <b> </b></h5>
+        <!-- <h5 class="about-title center-align"> <b> </b></h5> -->
             <p class="about-text center-align"> This is a recipe site exclusively dedicated to muffins, where you can be a part of the action.</p>
                             
             <p class="about-text center-align">You can browse our recipes, find your favourites
@@ -28,11 +28,11 @@
 
     <!-- start of Carousel   -->
         <div class="carousel carousel-slider" id="muffin-carousel-auto" data-indicators="true">
-            <a class="carousel-item" href="#one!"><img src="../static/images/car1.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="../static/images/car2.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="../static/images/car3.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="../static/images/car4.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="../static/images/car5.jpg"></a>
+            <a class="carousel-item" href="#one!"><img src="../static/images/car1.jpg" alt="image of assorted muffins"></a>
+            <a class="carousel-item" href="#two!"><img src="../static/images/car2.jpg" alt="image of assorted muffins"></a>
+            <a class="carousel-item" href="#three!"><img src="../static/images/car3.jpg" alt="image of assorted muffins"></a>
+            <a class="carousel-item" href="#four!"><img src="../static/images/car4.jpg" alt="image of assorted muffins"></a>
+            <a class="carousel-item" href="#five!"><img src="../static/images/car5.jpg" alt="image of assorted muffins"></a>
         </div>
     <!-- ./ end of Carousel  -->
 
@@ -45,15 +45,14 @@
 </div>
 
 
-
 <!-- Start of all muffin db search-->
 
 <div class="search-muffins-header">
     <div class="row center-align">
         <div class="col s12">
             <br>
-            <h5 class="search-muffins-intro center-align">
-            </h5>
+            <!-- <h5 class="search-muffins-intro center-align">
+            </h5> -->
         </div>
 
         <div class="row card-panel grey lighten-5">
@@ -78,8 +77,6 @@
 
 
 <!-- start of featured muffins section -->
-
-
 <div class="row">
     {% for recipe in recipes %}
 
@@ -122,23 +119,18 @@
                                         {% endif %}
                                 </div>
                             </div>
-
                         </div>
-
                 </div>
             </div>
-        </div>
-        
+        </div>   
     {% endfor %}
 </div>
+<!-- end of featured muffins section -->
 
-
-<br>
+<!-- start of add recipe section -->
     <h4 class="center-align search-muffins-text">Feeling inspired? Why not add your own? </h4>
-<br>
-<br>
 
-<!-- ADD RECIPE BUTTON start -->
+        <!-- ADD RECIPE BUTTON start -->
             <div class="col s12 center-align">
                 <button type="submit" class="btn-large pulse pink lighten-3 text-shadow add-recipe-btn">
                     {% if session.user %}   
@@ -148,12 +140,6 @@
                     {% endif %}
                 </button>
             </div>
-
-<!-- /ADD RECIPE BUTTON end -->
-
-<br>
-<br>
-<br>
-
-
+        <!-- /ADD RECIPE BUTTON end -->
+<!-- end of add recipe section -->
 {% endblock %}
