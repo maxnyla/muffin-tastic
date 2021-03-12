@@ -20,14 +20,13 @@ Users are also able to delete their account which will delete the muffins from t
 1. [Introduction](#introduction)
 2. [UX and  Visual Identity](#ux)
 3. [Wireframes](#wireframes)
-4.   
-5. 
-6. [User Stories](#userstories)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
-9. [Technologies](#technologies)
-10. [Media](#media)
-11. [Acknowledgements and thanks](#acknowledgements)
+4. [Colour Scheme](#colour)
+5. [User Stories](#userstories)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Technologies](#technologies)
+9. [Media](#media)
+10. [Acknowledgements and thanks](#acknowledgements)
 
 
 ## Introduction <a name="introduction"></a>
@@ -219,6 +218,24 @@ I created two wireframes for each page: one home page for the mobile view and an
 
 
 
+## Colour scheme <a name="colour"></a>
+
+I used the same colours throughout the site, with mild variations whilst keeping with the hue and theme. I also chose images that complemented these colours.
+
+These were used as the main colours:
+
+- white: "white"
+- black: "black"
+- pink: #ee7aa2
+- grey: #80817a
+- green: #595C1B
+- light green: #F1F8E9
+
+The colour wheel for my base colour scheme can be found below:
+
+![image of main colours](/static/docs/readme/colorwheel.png)
+
+
 :house:[ Back to Table of Contents](#home)
 
 
@@ -304,27 +321,6 @@ This site is created for users to share muffin recipes, and get inspiration them
 
 
 
-
-#### *Colour scheme*
-
-I used the same colours throughout the site, with mild variations whilst keeping with the hue and theme. I also chose images that complemented these colours.
-
-These were used as the main colours:
-
-- white: "white"
-- black: "black"
-- pink: #ee7aa2
-- grey: #80817a
-- green: #595C1B
-- light green: #F1F8E9
-
-The colour wheel for my base colour scheme can be found below:
-
-![image of main colours](/static/docs/readme/colorwheel.png)
-
-
-
-
 **Testing/Building the site**
 
 The full testing process for this project can be found [here](TESTING.md).
@@ -388,7 +384,6 @@ The process that I followed for deployment of this project was based on the Code
 - Clicked on "Deploy Branch".
 
 - After a few minutes the site was deployed and it showed the "View" link to launch the app.
-
 
 
 
