@@ -341,6 +341,8 @@ For this project I have used the below technologies:
 - [CSS Validation Service](https://jigsaw.w3.org/css-validator)
     Used to check my CSS code
 
+- [PEP8 Validation] (http://pep8online.com/)
+    This was used to validate my Python code, the app.py file
 
 I have also used the Chrome Developer Tools extensively throughout the project. They have been very useful for each change that I made, and to double-check my ideas before implementing them. 
 
