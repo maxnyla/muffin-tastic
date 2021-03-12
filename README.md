@@ -180,9 +180,7 @@ There is also an option to delete the account completely, to remove it from the 
 
 **Add Recipe page**
 
-
-
-
+![Image showing page](/static/docs/readme/add_recipe.png)
 
 
 
@@ -190,7 +188,7 @@ There is also an option to delete the account completely, to remove it from the 
 **My Muffins page**
 
 
-
+![Image showing page](/static/docs/readme/my_muffins.png)
 
 
 
@@ -206,7 +204,7 @@ I created two wireframes for each page: one home page for the mobile view and an
 
 
 
-* The wireframes can be found here:
+The wireframes can be found here:
 
 [All wireframes for MS3 Muffin-Tastic](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/)
 
