@@ -323,8 +323,6 @@ The colour wheel for my base colour scheme can be found below:
 ![image of main colours](/static/docs/readme/colorwheel.png)
 
 
-:house:[ Back to Table of Contents](#home)
-
 
 
 **Testing/Building the site**
@@ -332,6 +330,7 @@ The colour wheel for my base colour scheme can be found below:
 The full testing process for this project can be found [here](TESTING.md).
 
 
+:house:[ Back to Table of Contents](#home)
 
 ## Deployment <a name="deployment"></a>
 
@@ -342,12 +341,54 @@ This website has been deployed to Heroku as [Muffin-Tastic](https://muffin-tasti
 It was deployed ahead of time and modified on a number of occasions so that I would be able to check how things worked on different devices, and to ask others to test it themselves. 
 
 
-The process for deployment is documented below:
+The process that I followed for deployment of this project was based on the Code Institute Mini Project instructions and is documented below:
 
+- Created a new repository in GitHub, based on the usual Code Institute template.
 
+- From Github, I opened the repository in Gitpod.
 
+- Set up the dependencies and files that Heroku needs by typing the below in the command line:
+	"pip3 freeze --local > requirements.txt"
+	"echo web: python app.py > Procfile"
 
-![Deployment](assets/site_overview/deployed.png)
+- Double checked that the two new files were created: Procfile and requirements.txt. 
+
+- Removed the blank line at the end of the Procfile as it can cause problems with Heroku.
+
+- Commited and pushed the requirements.txt and Procfile to GitHub.
+
+- Logged in to Heroku (www.herku.com) and selected "Create New App".
+
+- Selected the input field "App Name" and gave the app a unique name using dashes instead of spaces.
+
+- Selected the EU Ireland region as it was closest to my location and free.
+
+- Clicked on "Create App".
+
+- Selected "Deploy" from the Heroku App menu.
+
+- Selected "GitHub" under "Deployment Method".
+
+- Checked that my GitHub profile name was populated in the "Connect to GitHub" section.
+
+- Typed my GitHub repo name in the input field and clicked "Search".
+
+- Clicked on "Connect"  once Heroku displayed my repo name.
+
+- Clicked on "Settings" from the Heroku App menu.
+
+- Selected "Reveal Config Vars" and inputed the relevant key/value information from the my env.py (IP, PORT, MONGO_URI, MONGO_DBNAME, SECRET_KEY) file without quotation marks.
+
+- Selected "Deploy" in the Heroku App menu.
+
+- From the bottom of the page selected "Enable Automatic Deploys".
+
+- Under "Branch Selected", chose Master Branch.
+
+- Clicked on "Deploy Branch".
+
+- After a few minutes the site was deployed and it showed the "View" link to launch the app.
+
 
 
 
