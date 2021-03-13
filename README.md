@@ -462,41 +462,30 @@ I have taken advantage of several useful resources for images and my logo. Pleas
 
 -**Logo:**
 
-The Logo Makr website was used to design the logo. I simply searched for muffin designs and took one that I liked, before settling on 
+The [Logo Makr](https://logomakr.com/) website was used to design the logo. I simply searched for muffin designs and took one that I liked, before settling on 
 a colour and adding some text with the brand name to it.
 
-[Logo Makr](https://logomakr.com/) 
-    
 
 -**Site images:** 
 
-I found all the images that I wanted to use for the carousel and the general site from the Shutterstock website:
-
-[Shutterstock](https://www.shutterstock.com/) 
-
-With regards to the recipe images within the muffin recipes, I used the image that was provided in each recipe on the BBC Good Food website,
-where I took the recipes from:
-
-[BBC Good Food](https://www.bbcgoodfood.com/)
+-I found all the images that I wanted to use for the carousel and the general site areas from the [Shutterstock](https://www.shutterstock.com/) website.
 
 
-For the image used in the header of this Readme file showing the different screen sizes, I used the Am I Responsive website:
+-With regards to the recipe images within the muffin recipes, I used the image that was provided in each recipe on the [BBC Good Food](https://www.bbcgoodfood.com/) website,
+which is where I sourced the sample recipes from:
 
-[Am I Responsive](http://ami.responsivedesign.is/) 
+
+For the image used in the header of this Readme file showing the different screen sizes, I used the [Am I Responsive](http://ami.responsivedesign.is/) website:
 
 
-The thumbnail icon used on the internet tab header was sourced from the Favicon site. I used the same image that I already had for the logo and uploaded it
-to the Favicon site for the favicon to be automatically generated:
-
-[Favicon](https://www.favicon.io)
+-The thumbnail icon used on the internet tab header was sourced from the [Favicon](https://www.favicon.io) site. I used the same image that I already had for the logo and uploaded it
+to the Favicon site for the favicon to be automatically generated.
 
 
 **Icons:**
 
-I decided not to use the Materialize icons since the Font Awesome database is larger so instead I went with the Font Awesome icon packs. I used the free tier:
-
-[Font Awesome](https://fontawesome.com/6?next=%2Fstart) 
-
+I decided not to use the Materialize icons since the Font Awesome database is larger so instead I went with the [Font Awesome](https://fontawesome.com/) icon packs. 
+I used the free tier for these icons.
 
 
 
