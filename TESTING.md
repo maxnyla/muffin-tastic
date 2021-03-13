@@ -115,12 +115,18 @@ would have taken a long time otherwise.
 
 ## Defensive Design <a name="defensived"></a>
 
-This project includes defensive design, which has been implemented via two routes: first on the html templates themselves via 
-minimum requirements when completing the forms, and secondly via the Python code in the app.py file, to request database checks before certain
-actions are completed.
+This project includes defensive design, which has been implemented via two routes: 
+
+- first:
+  on the html templates themselves via minimum requirements when completing the forms, and 
+  
+- secondly:
+ via the Python code in the app.py file, to request database checks before certain actions are completed.
+
 For example, if the session user does not match the username who created an account or a muffin, they will not be able to delete or edit these because 
 the system will redirect them to another page.
-This design is also applied to the navigation, by preventing users from seeing linkes to pages that they are not supposed to see.
+
+This design is also applied to the html code affecting navigation, by preventing users from seeing linkes to pages that they are not supposed to see.
 
 For example, a user who is not logged in will not be able to see the links to add recipes or to their account and so on.
 
