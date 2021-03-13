@@ -58,11 +58,11 @@ The site also allows users to search for recipes that interest them and view exa
 
     Users are able to create a free account. No personal data is held 
 
-- Log in and Log out
+- *Log in and Log out*
 
     Once logged in, have access to create muffins 
 
-- Muffin recipes
+- *Muffin recipes*
 
     - Users can view muffin recipes
 
@@ -75,20 +75,21 @@ The site also allows users to search for recipes that interest them and view exa
 	- Users can delete recipes
 
 
-- Account page
+- *Account page*
 
     Shows the user's' added muffins. These can be edited any time. 
 
     Allows user to delete their account any time.
 
 
-- Error pages
+- *Error pages*
 
     If users end up on an incorrect url or get a server error, they are redirected to a landing page with links to the main home page
     I created the landing pages using the same colour scheme as the rest of the site, to create visual uniformity.
 
 
-- I used two base.html templates: base.html and base_login.html.
+- *Base templating using Jinja*
+    I used two base.html templates: base.html and base_login.html.
     The reason for this was that I wannted to use a main container of the fluid kind for the Register and Login pages but this did not 
     work with the rest of my design, with the other html templates.
     I decided to just create a separate template for those pages and keep the rest of templates using the original base.html template. 
