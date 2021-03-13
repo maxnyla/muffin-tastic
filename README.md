@@ -95,7 +95,10 @@ Below is a view of the home page when logged out:
 
 
 
+
 ![Image showing website page](/static/docs/readme/home_out.png)
+
+
 
 
 
@@ -104,6 +107,8 @@ And when logged in:
 
 
 ![Image showing website page](/static/docs/readme/home_in.png)
+
+
 
 
 
@@ -118,7 +123,10 @@ requirements specified in the code:
 
 
 
+
 ![Image showing code](/static/docs/readme/username&pwd.png)
+
+
 
 
 
@@ -130,7 +138,11 @@ I chose a lime green colour for the flash messages because I believe that it com
 
 
 
+
+
 ![Image showing page](/static/docs/readme/doubleregister.png)
+
+
 
 
 
@@ -140,7 +152,10 @@ such as adding muffin recipes and viewing their additions or deleting their acco
 
 
 
+
+
 ![Image showing page](/static/docs/readme/registersuccess.png)
+
 
 
 
@@ -156,10 +171,14 @@ I set this as background and then created a blank white card for the login/logou
 it comes to colour scheme, but on logout a flash message is shown stating that the logout has been successful.
 
 
+
+
 ![Image showing page](/static/docs/readme/login.png)
 
 
 ![Image showing page](/static/docs/readme/logout.png)
+
+
 
 
 
@@ -175,20 +194,32 @@ and displays all the recipes created by this user.
 
 There is also an option to delete the account completely, to remove it from the system.
 
+
+
 ![Image showing page](/static/docs/readme/account.png)
+
+
 
 
 
 **Add Recipe page**
 
+
+
 ![Image showing page](/static/docs/readme/add_recipe.png)
+
+
 
 
 
 **My Muffins page**
 
 
+
+
 ![Image showing page](/static/docs/readme/my_muffins.png)
+
+
 
 
 
