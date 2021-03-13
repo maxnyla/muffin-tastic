@@ -54,7 +54,7 @@ The site also allows users to search for recipes that interest them and view exa
 
 Current Features:
 
--Register 
+- Register 
 
     Users are able to create a free account. No personal data is held 
 

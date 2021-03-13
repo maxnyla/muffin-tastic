@@ -115,21 +115,53 @@ would have taken a long time otherwise.
 
 ## Defensive Design <a name="defensived"></a>
 
+This project includes defensive design, which has been implemented via two routes: first on the html templates themselves via 
+minimum requirements when completing the forms, and secondly via the Python code in the app.py file, to request database checks before certain
+actions are completed.
+For example, if the session user does not match the username who created an account or a muffin, they will not be able to delete or edit these because 
+the system will redirect them to another page.
+This design is also applied to the navigation, by preventing users from seeing linkes to pages that they are not supposed to see.
 
+For example, a user who is not logged in will not be able to see the links to add recipes or to their account and so on.
 
-
-
+By doubling up on the front end and back end defensive design, the system becomes harder to manipulate and more secure.
 
 
 ## Testing User Stories <a name="testing"></a>
+
+- Testing process
+
+A manual testing process has been followed for this project in order to assess user experience and usability, functionality data processing and responsiveness. I followed a route to route process to ensure that every feature was checked.
+
+User Stories: 
+All the user stories were tested to make sure the aims of the project were met and all users are able to achieve the goals of the site.
+
+All pages:
+All pages were tested to check if users are able to view all the pages that they should have accecss to view and if they are unable of accessing pages that they do not have permission to see, based on whether they are signed in or not.
+
+All forms: 
+Checked if all the forms are working as intended and if data which is inputted properly validated at the front end before it is passed to the database. Also, checked that users are not able to bypass the required fields and submit an empty or partially empty form.
+
+All links: 
+Tested all the links and buttons on all pages to make sure that they direct to the correct destination.
+
 
 - Testing the login and registration page:
 
 I tried logging in with duplicated username and also with incorrect password to check that all the error messages and warnings were displaying the way they were meant to
 All the relevant flash messages were also checked for accuracy and I ensured everything was working properly before moving on
 
+- Testing the add muffin form
 
+I added, edited and deleted recipes to ensure everything was working correctly.
 
+- Testing different urls, forcing for an error
+
+I tried causing errors to test if my error templates would load and work properly.
+
+- Testing the delete account function
+
+I created and deleted a number of accounts to make sure everything was working correctly
 
 
 **Challenges building the site**
@@ -216,6 +248,9 @@ A few items that would be interesting for future development are:
 
 - When the user clicks on the 'delete account' button I would like to provide a confirmation pop-up before they confirm. I tried a modal but 
 I could not get it to work and ran out of time to finish it. 
+
+- I realised during testing that when a user deletes their account, their muffins still remain on the system. I would like to add a feature
+where they can choose to automatically delete their muffins if they wish as well. 
 
 
 
