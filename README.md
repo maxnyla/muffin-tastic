@@ -52,6 +52,40 @@ The site also allows users to search for recipes that interest them and view exa
 ## UX and Visual Identity<a name="ux"></a>
 
 
+Current Features:
+
+-Register 
+
+Users are able to create a free account. No personal data is held 
+
+- Log in and Log out
+
+Once logged in, have access to create muffins 
+
+- Muffin recipes
+
+    - Users can view muffin recipes
+
+	- Users can search for recipes
+
+ 	- Users can add recipes
+
+	- Users can edit recipes
+
+	- Users can delete recipes
+
+
+- Account page
+
+Shows the user's' added muffins. These can be edited any time. 
+
+Allows user to delete their account any time.
+
+
+- Error pages
+
+If users end up on an incorrect url or get a server error, they are redirected to a landing page with links to the main home page
+
 
 **Logo and branding**
 

@@ -136,19 +136,19 @@ All the relevant flash messages were also checked for accuracy and I ensured eve
 
 Whilst working on this project I encountered a series of issues that I needed to overcome. Please see below for details.
 
--Database connection:
+- Database connection:
 
 When attempting to build the registration page, I was faced with an issue where the new users were not registered by the database.
 After some troubleshooting I realised that I had an incorrect db name in my env.py file. After I corrected this and restarted my workspace
 it worked correctly and the database was displaying my activity and connections
 
 
--Materialize icons
+- Materialize icons
 
 I decided to remove the link to the sytlesheet for them from base html as they were not displaying correctly and they messed up the design of my cards when displayed on the screen.
 
 
--Recipes Jinja templating
+- Recipes Jinja templating
 
 When adding the recipe loop within the recipes.html file, I had a jinja error stating 'recipe is not defined'. This was due to the fact that I had mistakenly left some redundant code 
 in the file so my actual loop wasn't running. I removed the extra code and after reloading the app, it worked.
@@ -160,7 +160,7 @@ Also, instead of in a block the cards were in a vertical row.
 I then realised that I had made a mistake with where my for loop started and ended so I changed it and everything worked properly then.
 
 
--Recipe card
+- Recipe card
 
 When previewing the recipe card on the live Heroku app, nothing came up under the ingredients. I looked in the db document and noticed something that I had missed when I had checked this before: 
 the recipe ingredients had the wrong name as it was missing the underscore between recipe and ingredients. Once I corrected this, it worked fine and the ingredients displayed in the correct place within the recipe card.
@@ -168,23 +168,23 @@ the recipe ingredients had the wrong name as it was missing the underscore betwe
 Whilst testing the recipe cards I realised that I did not have an alt image for my muffin recipes so I added this, with fallback text pointing to the recipe description
 
 
--App.py file
+- App.py file
 
 After adding my dictionary items to the app.py file I realised that I had incorrectly named some items in the add_recipe.html file so I renamed them. I forgot to rename these in Mongo db though so I had errors when I tried to access the form afterwards. 
 Once I updated them on the Mongo db  everything worked correctly.
 
 
--Add recipe function
+- Add recipe function
 The first recipe that I tried to add as a user through the site did not work. The ingredients and instructions did not go through to the database and neither did the description until I corrected the typo on the app.py file.
 
 
--Materialize Carousel
+- Materialize Carousel
 
 The photo carousel was not working correctly, only the first photo showed and there was no sliding. 
 Upon investigation, it appeared that my jQuery code for the initialisation was incorrect so once I replaced that, it all worked as intended.
 
 
--Add recipe button
+- Add recipe button
 Add recipe button from homepage directs to the add recipe page but was not validating if user was logged in, so it threw an error if a logged out user tried to access it. 
 I corrected this by restricting the add recipe access to logged in users and redirecting the rest to the login or register page.
 
@@ -210,11 +210,11 @@ have the time to  look into it.
 
 A few items that would be interesting for future development are:
 
--Allow users to add more fields to their profile: Full name, email, etc.
+- Allow users to add more fields to their profile: Full name, email, etc.
 
--Allow users to add muffins to their 'favourites' so they can access liked items made by others.
+- Allow users to add muffins to their 'favourites' so they can access liked items made by others.
 
--When the user clicks on the 'delete account' button I would like to provide a confirmation pop-up before they confirm. I tried a modal but 
+- When the user clicks on the 'delete account' button I would like to provide a confirmation pop-up before they confirm. I tried a modal but 
 I could not get it to work and ran out of time to finish it. 
 
 
