@@ -56,11 +56,11 @@ Current Features:
 
 -Register 
 
-Users are able to create a free account. No personal data is held 
+    Users are able to create a free account. No personal data is held 
 
 - Log in and Log out
 
-Once logged in, have access to create muffins 
+    Once logged in, have access to create muffins 
 
 - Muffin recipes
 
@@ -77,14 +77,14 @@ Once logged in, have access to create muffins
 
 - Account page
 
-Shows the user's' added muffins. These can be edited any time. 
+    Shows the user's' added muffins. These can be edited any time. 
 
-Allows user to delete their account any time.
+    Allows user to delete their account any time.
 
 
 - Error pages
 
-If users end up on an incorrect url or get a server error, they are redirected to a landing page with links to the main home page
+    If users end up on an incorrect url or get a server error, they are redirected to a landing page with links to the main home page
 
 
 **Logo and branding**
