@@ -231,6 +231,10 @@ Whilst working on this project I encountered a series of issues that I needed to
 
 
 
+:house:[ Back to Table of Contents](#home)
+
+
+
 ## Bugs and Enhancements <a name="bugs"></a>
 
 
@@ -243,8 +247,6 @@ I ran out of time to fix the search function so that when it doesn't find any it
 have the time to  look into it.
 
 
-
-:house:[ Back to Table of Contents](#home)
 
 
 ### Future development:
