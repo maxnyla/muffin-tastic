@@ -42,10 +42,15 @@ One of the main goals of this project is to create a full stack site which displ
 Users need to be able to not only view the data displayed on the website, but also be able to have interactions with the site, 
 as well as add their own data and later on have the option to update and delete it if they so wish.
 
-In this case, the project is a recipe sharing site where users are able to view recipes and create an account in order to share their own. They can
-then delete the data at any time. 
+In this case, the project is a recipe sharing website where users are able to view and search for recipes without logging in and 
+they are also able to create an account in order to share their own recipes by creating content that is then displayed on their 
+account page. They then have the ability to edit or delete the data (muffin recipes) that they have created at any time. 
 
-The site also allows users to search for recipes that interest them and view exact instructions on how to recreate them.
+The site also allows users to search for recipes that interest them based on ingredients or name and view exact instructions on how to recreate them.
+
+One of the main goals besides the data and functionality management for the site creator was to provide some escapism and a pleasant
+visual and navigational experience by making it an attractive and easy to navigate site. There are links to the relevant pages and 
+sections in multiple places and the user experience is seamless and smooth.
 
 
 
