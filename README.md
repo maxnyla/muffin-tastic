@@ -9,11 +9,14 @@ alt="logo"/>
 ![Image containing example of responsiveness within several screens](/static/docs/readme/responsive1.png)
 
 
+
 The aim of Muffin-Tastic is to provide an inspiring array of muffin recipes, and allow anyone to create an account for free so that they can also add their 
 own recipes to the site. Once users have have registered a (free) account they will be able to add recipes to the site, edit them and delete them if they so wish.
 Users are also able to delete their account which will delete the muffins from the site as well. 
 
+
 **[View the live project here](https://muffin-tastic.herokuapp.com/)**
+
 
 
 # Table of Contents :house: <a name="home"></a>
@@ -30,7 +33,9 @@ Users are also able to delete their account which will delete the muffins from t
 11. [Acknowledgements and thanks](#acknowledgements)
 
 
+
 ## Introduction <a name="introduction"></a>
+
 
 The Muffin-Tastic site has been built as the Milestone Project number 3 for my Code Institute software development diploma. 
 
@@ -95,11 +100,13 @@ Below is a view of the home page when logged out:
 
 
 
+
 ![Image showing website page](/static/docs/readme/home_out.png)
 
 
 
 And when logged in:
+
 
 
 
@@ -130,7 +137,9 @@ I chose a lime green colour for the flash messages because I believe that it com
 
 
 
+
 ![Image showing page](/static/docs/readme/doubleregister.png)
+
 
 
 
@@ -140,7 +149,9 @@ such as adding muffin recipes and viewing their additions or deleting their acco
 
 
 
+
 ![Image showing page](/static/docs/readme/registersuccess.png)
+
 
 
 
@@ -156,7 +167,9 @@ I set this as background and then created a blank white card for the login/logou
 it comes to colour scheme, but on logout a flash message is shown stating that the logout has been successful.
 
 
+
 ![Image showing page](/static/docs/readme/login.png)
+
 
 
 ![Image showing page](/static/docs/readme/logout.png)
@@ -164,7 +177,9 @@ it comes to colour scheme, but on logout a flash message is shown stating that t
 
 
 
+
 **My Account page**
+
 
 
 Immediately after the user logs in, they are directed to their 'Account' Page with a greeting addressing them by their username. 
@@ -175,20 +190,30 @@ and displays all the recipes created by this user.
 
 There is also an option to delete the account completely, to remove it from the system.
 
+
+
+
 ![Image showing page](/static/docs/readme/account.png)
+
 
 
 
 **Add Recipe page**
 
+
+
 ![Image showing page](/static/docs/readme/add_recipe.png)
+
 
 
 
 **My Muffins page**
 
 
+
+
 ![Image showing page](/static/docs/readme/my_muffins.png)
+
 
 
 
@@ -197,18 +222,9 @@ There is also an option to delete the account completely, to remove it from the 
 
 All the wireframes were created with [Microsoft Paint](https://jspaint.app/).
 
-I created two wireframes for each page: one home page for the mobile view and another for the desktop view.
-
-
-The wireframes can be found here:
+I created a wireframe for each page, and the wireframes can be found here:
 
 [All wireframes for MS3 Muffin-Tastic](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/)
-
-[Home page wireframe web](https://github.com/maxnyla/muffin-tastic/tree/master/assets/static/docs/wireframes/1-home_web.png)
-
-[Home page wireframe mobile](https://github.com/maxnyla/muffin-tastic/tree/master/static/docs/wireframes/2-home_mob.png)
-
-
 
 
 ## Colour scheme <a name="colour"></a>
@@ -348,7 +364,7 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 
 
-**Testing/Building the site**
+## Testing/Building the site ## <a name="testing"></a>
 
 The full testing process for this project can be found [here](TESTING.md).
 
