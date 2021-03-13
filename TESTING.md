@@ -22,14 +22,12 @@ own recipes to the site. Once they have registered an account they will be able 
 6. [Testing User Stories](#testing)
 7. [Bugs and Enhancements](#bugs)
 
+:house:[ Back to README file](README.md).
+
+
 ## Introduction <a name="introduction"></a>
 
-
-
-
-:house:[ Back to Table of Contents](#home)
-
-
+This section will go over the various methods that I have used to perform my testing for this project.
 
 
 ## Responsiveness and Speed<a name="responsiveness"></a>
