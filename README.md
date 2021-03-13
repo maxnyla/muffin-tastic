@@ -421,7 +421,7 @@ For this project I have used the below technologies:
 
 - [CSS3](https://en.wikipedia.org/wiki/CSS) for the styling
 
-- [Javascript](https://jquery.com) for the interactive elements of the site, to initialize the Materialize elements that rtequired it.
+- [JQuery](https://jquery.com) for the interactive elements of the site, to initialize the Materialize elements that rtequired it.
 
 - [Gitpod](https://www.gitpod.io)
     Since I am typing this text through Gitpod, I figured it would go first in the list. All code was created through Gitpod and the workspace for this project resides there.
@@ -460,7 +460,7 @@ I have also used the Chrome Developer Tools extensively throughout the project. 
 
 I have taken advantage of several useful resources for images and my logo. Please see below:
 
-**Logo:**
+-**Logo:**
 
 The Logo Makr website was used to design the logo. I simply searched for muffin designs and took one that I liked, before settling on 
 a colour and adding some text with the brand name to it.
@@ -468,7 +468,7 @@ a colour and adding some text with the brand name to it.
 [Logo Makr](https://logomakr.com/) 
     
 
-**Site images:** 
+-**Site images:** 
 
 I found all the images that I wanted to use for the carousel and the general site from the Shutterstock website:
 
