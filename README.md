@@ -6,7 +6,6 @@ alt="logo"/>
 
 ![Image containing example of responsiveness within several screens](/static/docs/readme/responsive.png)
 
-![Image containing example of responsiveness within several screens](/static/docs/readme/responsive1.png)
 
 
 
@@ -26,7 +25,7 @@ Users are also able to delete their account which will delete the muffins from t
 4. [Colour Scheme](#colour)
 5. [User Stories](#userstories)
 6. [Database Design](#db)
-7. [Testing](#testing)
+7. [Testing](#test)
 8. [Deployment](#deployment)
 9. [Technologies Used](#technologies)
 10. [Media](#media)
@@ -380,7 +379,7 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 
 
-## Testing/Building the site <a name="testing"></a>
+## Testing/Building the site <a name="test"></a>
 
 
 The full testing process for this project can be found [here](TESTING.md).

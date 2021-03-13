@@ -4,8 +4,6 @@ alt="logo"/>
 </p>
 
 
-![Image containing example of responsiveness within several screens](/static/docs/readme/responsive.png)
-
 ![Image containing example of responsiveness within several screens](/static/docs/readme/responsive1.png)
 
 
@@ -125,11 +123,71 @@ would have taken a long time otherwise.
 
 ## Testing User Stories <a name="testing"></a>
 
+- Testing the login and registration page:
+
+I tried logging in with duplicated username and also with incorrect password to check that all the error messages and warnings were displaying the way they were meant to
+All the relevant flash messages were also checked for accuracy and I ensured everything was working properly before moving on
 
 
 
 
-**Testing/Building the site**
+
+**Challenges building the site**
+
+Whilst working on this project I encountered a series of issues that I needed to overcome. Please see below for details.
+
+-Database connection:
+
+When attempting to build the registration page, I was faced with an issue where the new users were not registered by the database.
+After some troubleshooting I realised that I had an incorrect db name in my env.py file. After I corrected this and restarted my workspace
+it worked correctly and the database was displaying my activity and connections
+
+
+-Materialize icons
+
+I decided to remove the link to the sytlesheet for them from base html as they were not displaying correctly and they messed up the design of my cards when displayed on the screen.
+
+
+-Recipes Jinja templating
+
+When adding the recipe loop within the recipes.html file, I had a jinja error stating 'recipe is not defined'. This was due to the fact that I had mistakenly left some redundant code 
+in the file so my actual loop wasn't running. I removed the extra code and after reloading the app, it worked.
+I also had to add some extra entries to the database at this point, since I added a few more to my recipes.html file which I had not added initially.
+
+
+After adding all my 'core' recipes to the database, the multiple cards were not displaying on the app correctly and the card reveal was not working properly. I would click any card and only the content for the first card would be shown. 
+Also, instead of in a block the cards were in a vertical row. 
+I then realised that I had made a mistake with where my for loop started and ended so I changed it and everything worked properly then.
+
+
+-Recipe card
+
+When previewing the recipe card on the live Heroku app, nothing came up under the ingredients. I looked in the db document and noticed something that I had missed when I had checked this before: 
+the recipe ingredients had the wrong name as it was missing the underscore between recipe and ingredients. Once I corrected this, it worked fine and the ingredients displayed in the correct place within the recipe card.
+
+Whilst testing the recipe cards I realised that I did not have an alt image for my muffin recipes so I added this, with fallback text pointing to the recipe description
+
+
+-App.py file
+
+After adding my dictionary items to the app.py file I realised that I had incorrectly named some items in the add_recipe.html file so I renamed them. I forgot to rename these in Mongo db though so I had errors when I tried to access the form afterwards. 
+Once I updated them on the Mongo db  everything worked correctly.
+
+
+-Add recipe function
+The first recipe that I tried to add as a user through the site did not work. The ingredients and instructions did not go through to the database and neither did the description until I corrected the typo on the app.py file.
+
+
+-Materialize Carousel
+
+The photo carousel was not working correctly, only the first photo showed and there was no sliding. 
+Upon investigation, it appeared that my jQuery code for the initialisation was incorrect so once I replaced that, it all worked as intended.
+
+
+-Add recipe button
+Add recipe button from homepage directs to the add recipe page but was not validating if user was logged in, so it threw an error if a logged out user tried to access it. 
+I corrected this by restricting the add recipe access to logged in users and redirecting the rest to the login or register page.
+
 
 
 ## Bugs and Enhancements <a name="bugs"></a>
@@ -138,14 +196,27 @@ would have taken a long time otherwise.
 
 ### Bugs or Unresolved Issues
 
+I was never able to get a Materialize form character counter or form validation for required fields to work. I tried multiple times but could not manage.
 
-
-### Future development:
-
+I ran out of time to fix the search function so that when it doesn't find any items, it redirects the user or gives them a message. I simply thought too late about it and didn't 
+have the time to  look into it.
 
 
 
 :house:[ Back to Table of Contents](#home)
+
+
+### Future development:
+
+A few items that would be interesting for future development are:
+
+-Allow users to add more fields to their profile: Full name, email, etc.
+
+-Allow users to add muffins to their 'favourites' so they can access liked items made by others.
+
+-When the user clicks on the 'delete account' button I would like to provide a confirmation pop-up before they confirm. I tried a modal but 
+I could not get it to work and ran out of time to finish it. 
+
 
 
 
