@@ -223,6 +223,15 @@ There is also an option to delete the account completely, to remove it from the 
 
 
 
+**Open/Edit recipe card view**
+
+From the list of recipes, the user can find a link to edit or delete this recipe from within the actual recipe card, as is seen 
+on this picture
+
+
+![Image showing page](/static/docs/readme/open_card.png)
+
+
 
 ## Wireframes <a name="wireframes"></a>
 
