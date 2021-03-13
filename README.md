@@ -32,7 +32,7 @@ Users are also able to delete their account which will delete the muffins from t
 
 ## Introduction <a name="introduction"></a>
 
-This site has been built as the Milestone Project number 3 for my Code Institute software development diploma. 
+The Muffin-Tastic site has been built as the Milestone Project number 3 for my Code Institute software development diploma. 
 
 One of the main goals of this project is to create a full stack site which displays the CRUD principles: Create, Read, Update and Delete. 
 Users need to be able to not only view the data displayed on the website, but also be able to have interactions with the site, 
@@ -458,15 +458,16 @@ I have also used the Chrome Developer Tools extensively throughout the project. 
 
 ## Media <a name="media"></a>
 
-I have taken advantage of several useful resources for images and my logo. Please see below:
+I have taken advantage of several useful resources for the media displayed on this project: the several muffin images, the logo and the thumbnail icon. 
+Please see below for details on each one.
 
--**Logo:**
+**Logo:**
 
 The [Logo Makr](https://logomakr.com/) website was used to design the logo. I simply searched for muffin designs and took one that I liked, before settling on 
 a colour and adding some text with the brand name to it.
 
 
--**Site images:** 
+**Site images:** 
 
 -I found all the images that I wanted to use for the carousel and the general site areas from the [Shutterstock](https://www.shutterstock.com/) website.
 
