@@ -85,6 +85,15 @@ Current Features:
 - Error pages
 
     If users end up on an incorrect url or get a server error, they are redirected to a landing page with links to the main home page
+    I created the landing pages using the same colour scheme as the rest of the site, to create visual uniformity.
+
+
+- I used two base.html templates: base.html and base_login.html.
+    The reason for this was that I wannted to use a main container of the fluid kind for the Register and Login pages but this did not 
+    work with the rest of my design, with the other html templates.
+    I decided to just create a separate template for those pages and keep the rest of templates using the original base.html template. 
+    This worked out well and I was pleased with the result.
+
 
 
 **Logo and branding**
