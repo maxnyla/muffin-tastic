@@ -462,8 +462,8 @@ I have taken advantage of several useful resources for images and my logo. Pleas
 
 **Logo:**
 
-For the logo design I used the Logo Makr website. I simply searched for muffin designs and took one that I liked, before 
-adding some text with the brand name to it.
+The Logo Makr website was used to design the logo. I simply searched for muffin designs and took one that I liked, before settling on 
+a colour and adding some text with the brand name to it.
 
 [Logo Makr](https://logomakr.com/) 
     
@@ -493,7 +493,7 @@ to the Favicon site for the favicon to be automatically generated:
 
 **Icons:**
 
-I decided not to use the Materialize icons and instead went with the Font Awesome icon packs. I used the free tier:
+I decided not to use the Materialize icons since the Font Awesome database is larger so instead I went with the Font Awesome icon packs. I used the free tier:
 
 [Font Awesome](https://fontawesome.com/6?next=%2Fstart) 
 
@@ -501,6 +501,9 @@ I decided not to use the Materialize icons and instead went with the Font Awesom
 
 
 ## Acknowledgements and thanks <a name="acknowledgements"></a>
+
+Inspiration for this project was taken from the basic idea of the Code Institute Mini-project, Task Manager. This was used as a base
+and then adapted to build this site on.
 
 I would like to mention all the different resources and sites that are out there, with their respective communities, which have been a huge help for me. 
 Some of them are:

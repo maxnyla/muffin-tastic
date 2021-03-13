@@ -28,6 +28,7 @@ own recipes to the site. Once they have registered an account they will be able 
 
 
 
+
 :house:[ Back to Table of Contents](#home)
 
 
@@ -35,13 +36,15 @@ own recipes to the site. Once they have registered an account they will be able 
 
 ## Responsiveness and Speed<a name="responsiveness"></a>
 
-This website has been tested through the GTMetrix site, [GTmetrix](https://gtmetrix.com).
-Below is a screenshot of the results achieved for each page. Page speed score was and the time to fully load the site was
+Responsiveness and speed as well as general usability was tested manually.
 
-![Website Speed Test Results home](assets/img/performance1.png)
+Chrome Developer Tools were used to test responsiveness on all screen sizes. This was done whilst the project was being built on, 
+to ensure at all times that the build was going well and that there would be no surprises later on. I made changes to the css stylesheet
+via media queries for smaller screens at any time when I noticed an issue with responsiveness.
 
+Several functions or sections were edited through media queries.
 
-![Website Speed Test Results game](assets/img/performance2.png)
+I also tested this via my mobile devices and asked other people to test it and provide feedback as well.
 
 
 
@@ -70,50 +73,44 @@ It has appeared to behave correctly on all these platforms and no issues were ob
 
 I ran all my code through the various relevant validators:
 
-The [W3C Markup Validation Service](https://validator.w3.org) for my HTML code, 
+-The [CSS Validation Service](https://jigsaw.w3.org/css-validator) for the CSS code.
 
-the [CSS Validation Service](https://jigsaw.w3.org/css-validator) for the CSS code 
-
-and the [PEP8 Validation](http://pep8online.com/) for the Python code.
 
 The CSS validator resulted in three errors: one invalid font-weight value which was 350 and I changed to 300 as a result of the validator, and two
 incorrect font styling options for the muffin card names that I had set to incorrectly use emphasize. Since these were not being applied as they were incorrect, I simply removed them from my code
 and the validation was then successful.
 
+
+![css validation results](/static/docs/readme/validation/css_val.png)
+
+
+
+-The [PEP8 Validation](http://pep8online.com/) was used for the Python code.
+
 The PEP8 code validator gave me a few indentation errors and lines that were too long so I fixed all these before saving the files again and the code passed 
 this time, after the changes.
 
 
+![app.py validation results](/static/docs/readme/validation/pep8_val.png)
 
-Links to the results of the last validation completed can be found below:
 
 
-[Python code for app.py file](/static/docs/readme/validation)
+-The [W3C Markup Validation Service](https://validator.w3.org) was used for the HTML code.
 
-[Python code for app.py file](/static/docs/readme/validation/pep8_val.png)
+The HTML validation was a bit difficult, since the checks threw multiple errors due to the use of Jinja templating. The checks point to the lack of proper headers 
+on the templates and also multiple errors are caused by the use of the } symbols in the Jinja templates. For this reason I decided to ignore the errors, since
+I am not aware of a way to bypass these.
 
-![HTML](/static/docs/readme/validation/base_val.png)
+Since the HTML code is so extensive as there are a number of files, instead of posting each link here I have decided to post a link to the
+directory where all the results for the HTML validation can be found:
 
-![HTML](/static/docs/readme/validation/base_login_val.png)
+[Link to all HTML validator results](/static/docs/readme/validation)
 
-![HTML](/static/docs/readme/validation/account_val.png)
 
-![HTML](/static/docs/readme/validation/add_recipe_val.png)
+I have also used the Chrome Developer Tools extensively throughout the project at every step. They have been very useful for each change that I made, 
+and to double-check my ideas before implementing and committing them. I have made multiple colour and formatting changes due to using these which
+would have taken a long time otherwise.
 
-[HTML](/static/docs/readme/validation/edit_recipe_val.png)
-
-[HTML](/static/docs/readme/validation/errorpage_val.png)
-
-[HTML](/static/docs/readme/validation/login_val.png)
-
-[HTML](/static/docs/readme/validation/my_muffins_val.png)
-
-[HTML](/static/docs/readme/validation/recipes_val.png)
-
-[HTML](/static/docs/readme/validation/register_val.png)
-
-I have also used the Chrome Developer Tools extensively throughout the project. 
-They have been very useful for each change that I made, and to double-check my ideas before implementing them. 
 
 
 :house:[ Back to Table of Contents](#home)
@@ -121,10 +118,15 @@ They have been very useful for each change that I made, and to double-check my i
 ## Defensive Design <a name="defensived"></a>
 
 
+
+
+
+
+
 ## Testing User Stories <a name="testing"></a>
 
 
-**Demo/Manual Testing methodology**
+
 
 
 **Testing/Building the site**
