@@ -145,19 +145,11 @@ I chose a lime green colour for the flash messages because I believe that it com
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d548addb70b036b5bf5a3f42e351852c48acc31
 ![Image showing page](/static/docs/readme/doubleregister.png)
 
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d548addb70b036b5bf5a3f42e351852c48acc31
 When a new user registers, they will be greeted with a flash message and be directed to their 'Account' page, which shows the options available to them
 such as adding muffin recipes and viewing their additions or deleting their account.
 
@@ -165,10 +157,6 @@ such as adding muffin recipes and viewing their additions or deleting their acco
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d548addb70b036b5bf5a3f42e351852c48acc31
 ![Image showing page](/static/docs/readme/registersuccess.png)
 
 
@@ -187,10 +175,6 @@ it comes to colour scheme, but on logout a flash message is shown stating that t
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d548addb70b036b5bf5a3f42e351852c48acc31
 ![Image showing page](/static/docs/readme/login.png)
 
 
@@ -201,10 +185,6 @@ it comes to colour scheme, but on logout a flash message is shown stating that t
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d548addb70b036b5bf5a3f42e351852c48acc31
 **My Account page**
 
 
@@ -390,9 +370,12 @@ The Muffindb consists of 4 Collections and its structure can be found below:
 
 
 
-## Testing/Building the site ## <a name="testing"></a>
+
+## Testing/Building the site <a name="testing"></a>
+
 
 The full testing process for this project can be found [here](TESTING.md).
+
 
 
 
